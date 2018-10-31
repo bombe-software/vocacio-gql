@@ -1,7 +1,7 @@
-const api = require('./deploy').api;
-const ws = require('./deploy').ws;
-const status = require('./deploy').status;
-const MONGO_URI = require('./deploy').MONGO_URI;
+const api = require('./config/config').api;
+const ws = require('./config/config').ws;
+const status = require('./config/config').status;
+const MONGO_URI = require('./config/config').MONGO_URI;
 
 //Librerias de express
 const express = require('express');
