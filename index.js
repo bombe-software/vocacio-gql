@@ -1,4 +1,5 @@
 const api = require('./config/config').api;
+const web = require('./config/config').web;
 const ws = require('./config/config').ws;
 const status = require('./config/config').status;
 const MONGO_URI = require('./config/config').MONGO_URI;
@@ -27,7 +28,7 @@ const PubSub = require('graphql-subscriptions').PubSub;
 //Importar schemas
 const schema = require('./src');
 mongoose.Promise = require('bluebird');
-mongoose.connect(MONGO_URI).catch(err => console.error(err));
+mongoose.connect(MONGO_URI, { useNewUrlParser: true }).catch(err => console.error(err));
 
 const corsOptions = {
   origin: web,
