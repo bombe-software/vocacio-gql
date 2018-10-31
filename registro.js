@@ -1,4 +1,4 @@
-function registro(){
+function registro(req, res){
     const mongoose = require('mongoose');
 
     const Materia = mongoose.model('materia');

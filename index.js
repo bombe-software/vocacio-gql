@@ -43,6 +43,13 @@ expressGraphQL({
   graphiql: !status
 }));
 
+//Area de pruebas
+app.get('/registro', function (req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  require('./registro').registro(req, res);
+  res.end();
+});
+
 
 //Configuracion 
 const server = createServer(app);
