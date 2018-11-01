@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const universidad = mongoose.Schema({
     nombre: String,
+    abreviacion: String,
     logo: String,
     campus: [{
         type: Schema.Types.ObjectId,

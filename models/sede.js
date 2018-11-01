@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const sede = mongoose.Schema({
     nombre: String,
+    logo: String,
     categoria: String,
     posicion: String,
     universidad: {

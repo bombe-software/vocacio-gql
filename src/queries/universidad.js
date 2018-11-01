@@ -12,6 +12,7 @@ const UniversidadType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLID },
     nombre: { type: GraphQLString },
+    abreviacion: { type: GraphQLString },
     logo: { type: GraphQLString },
     campus: {
         type: GraphQLList(require('./sede')),
