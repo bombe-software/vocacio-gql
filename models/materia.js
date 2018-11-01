@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const materia = mongoose.Schema({
     nombre: String,
-    etiqueta: String
+    categoria: String,
+    semestre: Number
 });
 
 mongoose.model('materia', materia);
