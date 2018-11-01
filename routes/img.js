@@ -13,9 +13,13 @@ exports.send = function (req, res) {
     if (content_types[filename.split('.').pop()] == undefined) {
         res.end('Error[1]');
     } else {
-        fs.readFile(`./assets/images/${filename}`, function (err, data) {
-            res.writeHead(200, { 'Content-Type': content_types[filename.split('.').pop()] });
-            res.end(data || JSON.stringify(err));
+        fs.readFile(`./assets/logos/${filename}`, function (err, data) {
+            if(err){
+                res.end('Error[2]');
+            }else{
+                res.writeHead(200, { 'Content-Type': content_types[filename.split('.').pop()] });
+                res.end(data || 'Error[3]');
+            }
         });
     }
 };
