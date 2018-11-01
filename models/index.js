@@ -1,4 +1,4 @@
 require('./universidad');
-require('./campus');
+require('./sede');
 require('./carrera');
 require('./materia');

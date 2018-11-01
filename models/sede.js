@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const campus = mongoose.Schema({
+const sede = mongoose.Schema({
     nombre: String,
     categoria: String,
     posicion: String,
@@ -15,4 +15,4 @@ const campus = mongoose.Schema({
     }]
 });
 
-mongoose.model('campus', campus);
+mongoose.model('sede', sede);
