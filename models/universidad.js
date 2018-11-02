@@ -5,9 +5,9 @@ const universidad = mongoose.Schema({
     nombre: String,
     abreviacion: String,
     logo: String,
-    campus: [{
+    sedes: [{
         type: Schema.Types.ObjectId,
-        ref: 'campus'
+        ref: 'sede'
     }]
 });
 

@@ -3,11 +3,14 @@ const Schema = mongoose.Schema;
 
 const carrera = mongoose.Schema({
     nombre: String,
-    categoria: String,
-    semestres: Number,
-    campus: {
+    categoria: {
         type: Schema.Types.ObjectId,
-        ref: 'campus'
+        ref: 'categoria'
+    },
+    semestres: Number,
+    sede: {
+        type: Schema.Types.ObjectId,
+        ref: 'sede'
     },
     materias: [{
         type: Schema.Types.ObjectId,
