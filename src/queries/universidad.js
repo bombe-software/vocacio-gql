@@ -14,11 +14,11 @@ const UniversidadType = new GraphQLObjectType({
     nombre: { type: GraphQLString },
     abreviacion: { type: GraphQLString },
     logo: { type: GraphQLString },
-    campus: {
+    sede: {
         type: GraphQLList(require('./sede')),
         resolve(parentValue) {
-          return Universidad.findById(parentValue).populate('campus')
-              .then(universidad => universidad.campus);
+          return Universidad.findById(parentValue).populate('sede')
+              .then(universidad => universidad.sede);
         }
       }
   })
