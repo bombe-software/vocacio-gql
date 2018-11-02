@@ -11,6 +11,7 @@ const SedeType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLID },
     nombre: { type: GraphQLString },
+    abreviatura: { type: GraphQLString },
     logo: { type: GraphQLString },
     categoria: { type: GraphQLString },
     posicion: { type: GraphQLString },

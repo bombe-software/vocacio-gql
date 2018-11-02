@@ -7,99 +7,114 @@ const Carrera = mongoose.model('carrera');
 const Materia = mongoose.model('materia');
 const Categoria = mongoose.model('categoria');
 
-//Variables
+function carga_universidades(req, res) {
+    //Array de Universidades
+    const universidades = [
+        {
+            nombre: "Instituto Politecnico Nacional",
+            abreviatura: "IPN",
+            logo: "IPN.jpg"
+        },
+        {
+            nombre: "Universidad Autonoma de Mexico",
+            abreviatura: "UNAM",
+            logo: "UNAM.jpg"
+        }
+    ];
+    universidades.map((item, index) => {
+        const universidad = new Universidad(item);
+        universidad.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carga_categorias(req, res);
+}
 
-//FUNCIÓN DE LOS ARRAYS: Para hacer que los registros cambien, simplemente se cambian las constantes array, las cuales se encuentran separadas por el tipo de registros
-//que realizan, por ejemplo, universidades[] se encarga de registras universidades, así respectivamente
-//ORDEN DE REGISTROS: El orden de registro se encuentra de mayor alcance a menor alcance, o sea, primero se registran las universidades, luego las 
-//categorias, luego las sedes(campus), luego las carreras y al final las materias
+function carga_categorias(req, res) {
+    //Array de Categorias
+    const categorias = [
+        { nombre: 'Ciencias Fisico Matematicas' },
+        { nombre: 'Ciencias Medico Biologicas' },
+        { nombre: 'Ciencias Sociales y Administrativas' }
+    ];
+    categorias.map((item, index) => {
+        const categoria = new Categoria(item);
+        categoria.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carga_sedes(req, res);
+}
 
-//Array de Universidades
-const universidades = [
-    {
-        nombre: "IPN",
-        logo: "IPN.jpg"
-    },
-    {
-        nombre: "UNAM",
-        logo: "UNAM.jpg"
-    }
-];
-
-//Array de Categorias
-const categorias = [
-    { nombre: 'Ciencias Matemáticas' },
-    { nombre: 'Ciencias Biológicas' },
-    { nombre: 'Ciencias Sociales' }
-];
-
-//Array de sedes
-const sedes = [
-    {
-        nombre: 'UPIITA',
-        logo: 'IPN.png',
-        categoria: Categoria.findOne({ nombre: 'Ciencias Matemáticas' })._id,
-        posicion: '19.820845, -99.203562',
-        universidad: Universidad.findOne({ nombre: 'IPN' })._id
-    },
-    {
-        nombre: 'Facultad de Ciencias',
-        logo: 'UNAM.png',
-        categoria: Categoria.findOne({ nombre: 'Ciencias Matemáticas' })._id,
-        posicion: '19.820845, -99.203562',
-        universidad: Universidad.findOne({ nombre: 'UNAM' })._id
-    },
-];
-
-//Se encarga de que las funciones se ejecuten en serie
-async.series({
-    one: function (callback) {
-        universidades.map((item, index) => {
-            const universidad = new Universidad(item);
-            //if (Universidad.findOne(item.nombre) == null || Universidad.findOne(item.nombre) == []){
-            universidad.save()
-                .then(item => {
-                    console.log(item);
-                });
-            //}
-
-            if ((index) == (universidades.length - 1)) {
-                callback(null, 'one');
-            }
-        });
-    },
-    two: function(callback) {
-        categorias.map((item, index) => {
-            const categoria = new Categoria(item);
-            //if (Categoria.findOne(item.nombre) == null || Categoria.findOne(item.nombre) == []) {
-            categoria.save()
-                .then(item => {
-                    console.log(item);
-                });
-            //}
-
-            if (index == (categorias.length - 1)) {
-                callback(null, 'two');
-            }
-        });
-    },
-    three: function(callback) {
-        sedes.map((item, index) => {
-            const sede = new Sede(item);
-            //if (Sede.findOne(item.nombre) == null || Sede.findOne(item.nombre) == []) {
-            sede.save()
-                .then(item => {
-                    console.log(item);
-                });
-            //}
-
-            if (index == (sedes.length - 1)) {
-                callback(null, 'three');
-            }
-        });
-    }
-});
+async function carga_sedes(req, res) {
+    let universidades;
+    await Universidad.find({}, function (err, obj) {
+        universidades = obj;
+    });
+    let categorias;
+    await Categoria.find({}, function (err, obj) {
+        categorias = obj;
+    });
+    const sedes = [
+        {
+            nombre: 'Unidad Profesional Interdisciplinaria en Ingenieria y Tecnologias Avanzadas',
+            abreviatura: 'UPIITA',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Facultad de Ciencias',
+            abreviatura: 'Facultad de Ciencias',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[1]._id
+        },
+        {
+            nombre: 'Escuela Superior de Computo',
+            abreviatura: 'ESCOM',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        }
+    ];
+    sedes.map((item, index) => {
+        const sede = new Sede(item);
+        sede.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+};
+function main(req, res) {
+    //Se encarga de que las funciones se ejecuten en serie
+    async.series({
+        uno: function (callback) {
+            carga_universidades(req, res);
+            callback(null, 'uno');
+        },
+        dos: function (callback) {
+            carga_categorias(req, res);
+            callback(null, 'dos');
+        },
+        tres: function (callback) {
+            carga_sedes(req, res);
+            callback(null, 'tres');
+        },
+        final: function (callback) {
+            console.log('Ya acabo');
+            callback(null, 'final');
+        }
+    });
+}
 
 exports.registro = function (req, res) {
-    
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    main(req, res);
+    res.end();
 };
