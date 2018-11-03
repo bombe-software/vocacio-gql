@@ -12,6 +12,7 @@ const MateriaType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLID },
     nombre: { type: GraphQLString },
+    carera: { type: GraphQLString },
     categoria: { type: GraphQLString },
     semestre: { type: GraphQLInt },
   })

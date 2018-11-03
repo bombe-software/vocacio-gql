@@ -61,7 +61,7 @@ async function carga_sedes(req, res) {
     });
     const sedes = [
         //Escuelas del IPN
-        //Área Físico Matemática
+        //ï¿½rea Fï¿½sico Matemï¿½tica
         {
             nombre: 'Escuela Superior de Computo',
             abreviatura: 'ESCOM',
@@ -70,102 +70,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
-        {
-            nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Ticomán',
-            abreviatura: 'ESIA',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Físico Matemáticas',
-            abreviatura: 'ESFM',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Zacatenco',
-            abreviatura: 'ESIA',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Azcapotzalco',
-            abreviatura: 'ESIME',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Unidad Profesional Interdisciplinaria de Biotecnología',
-            abreviatura: 'UPIBI',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Culhuacán',
-            abreviatura: 'ESIME',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas',
-            abreviatura: 'UPIIZ',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Ticomán',
-            abreviatura: 'ESIME',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas',
-            abreviatura: 'UPIICSA',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Zacatenco',
-            abreviatura: 'ESIME',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Guanajuato',
-            abreviatura: 'UPIIG',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería Química e Industrías Extractivas',
-            abreviatura: 'ESIQIE',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
+        //Vicroni
         {
             nombre: 'Unidad Profesional Interdisciplinaria en Ingenieria y Tecnologias Avanzadas',
             abreviatura: 'UPIITA',
@@ -175,15 +80,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Escuela Superior de Ingeniería Textil',
-            abreviatura: 'ESIT',
-            logo: '',
-            categoria: categorias[0]._id,
-            posicion: '',
-            universidad: universidades[0]._id
-        },
-        {
-            nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Tecamachalco',
+            nombre: 'Escuela Superior de Ingenierï¿½a y Arquitectura Unidad Ticomï¿½n',
             abreviatura: 'ESIA',
             logo: '',
             categoria: categorias[0]._id,
@@ -191,14 +88,118 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Hidalgo',
+            nombre: 'Escuela Superior de Fï¿½sico Matemï¿½ticas',
+            abreviatura: 'ESFM',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a y Arquitectura Unidad Zacatenco',
+            abreviatura: 'ESIA',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a Mecï¿½nica y Elï¿½ctrica Unidad Azcapotzalco',
+            abreviatura: 'ESIME',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Unidad Profesional Interdisciplinaria de Biotecnologï¿½a',
+            abreviatura: 'UPIBI',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a Mecï¿½nica y Elï¿½ctrica Unidad Culhuacï¿½n',
+            abreviatura: 'ESIME',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Unidad Profesional Interdisciplinaria de Ingenierï¿½a Campus Zacatecas',
+            abreviatura: 'UPIIZ',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a Mecï¿½nica y Elï¿½ctrica Unidad Ticomï¿½n',
+            abreviatura: 'ESIME',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Unidad Profesional Interdisciplinaria de Ingenierï¿½a y Ciencias Sociales y Administrativas',
+            abreviatura: 'UPIICSA',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a Mecï¿½nica y Elï¿½ctrica Unidad Zacatenco',
+            abreviatura: 'ESIME',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Unidad Profesional Interdisciplinaria de Ingenierï¿½a Campus Guanajuato',
+            abreviatura: 'UPIIG',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a Quï¿½mica e Industrï¿½as Extractivas',
+            abreviatura: 'ESIQIE',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a Textil',
+            abreviatura: 'ESIT',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Escuela Superior de Ingenierï¿½a y Arquitectura Unidad Tecamachalco',
+            abreviatura: 'ESIA',
+            logo: '',
+            categoria: categorias[0]._id,
+            posicion: '',
+            universidad: universidades[0]._id
+        },
+        {
+            nombre: 'Unidad Profesional Interdisciplinaria de Ingenierï¿½a Campus Hidalgo',
             abreviatura: 'UPIIH',
             logo: '',
             categoria: categorias[0]._id,
             posicion: '',
             universidad: universidades[0]._id
         },
-        //Área Médico Biológicas
+        //ï¿½rea Mï¿½dico Biolï¿½gicas
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Milpa Alta',
             abreviatura: 'CICS',
@@ -208,7 +209,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Escuela Nacional de Medicina y Homeopatía',
+            nombre: 'Escuela Nacional de Medicina y Homeopatï¿½a',
             abreviatura: 'ENMyH',
             logo: '',
             categoria: categorias[1]._id,
@@ -216,7 +217,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Santo Tomás',
+            nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Santo Tomï¿½s',
             abreviatura: 'CICS',
             logo: '',
             categoria: categorias[1]._id,
@@ -224,7 +225,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Escuela Superior de Enfermería y Obstetricia',
+            nombre: 'Escuela Superior de Enfermerï¿½a y Obstetricia',
             abreviatura: 'ESEO',
             logo: '',
             categoria: categorias[1]._id,
@@ -232,7 +233,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Escuela Nacional de Ciencias Biológicas',
+            nombre: 'Escuela Nacional de Ciencias Biolï¿½gicas',
             abreviatura: 'ENCB',
             logo: '',
             categoria: categorias[1]._id,
@@ -247,9 +248,9 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
-        //Área Sociales y Administrativas
+        //ï¿½rea Sociales y Administrativas
         {
-            nombre: 'Escuela Superior de Comercio y Administración Unidad Santo Tomás',
+            nombre: 'Escuela Superior de Comercio y Administraciï¿½n Unidad Santo Tomï¿½s',
             abreviatura: 'ESCA',
             logo: '',
             categoria: categorias[2]._id,
@@ -257,7 +258,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Escuela Superior de Economía',
+            nombre: 'Escuela Superior de Economï¿½a',
             abreviatura: 'ESE',
             logo: '',
             categoria: categorias[2]._id,
@@ -265,7 +266,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         {
-            nombre: 'Escuela Superior de Comercio y Administración Unidad Tepepan',
+            nombre: 'Escuela Superior de Comercio y Administraciï¿½n Unidad Tepepan',
             abreviatura: 'ESCA',
             logo: '',
             categoria: categorias[2]._id,
@@ -291,7 +292,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Artes y Diseño',
+            nombre: 'Facultad de Artes y Diseï¿½o',
             abreviatura: 'FAD',
             logo: '',
             categoria: categorias[3]._id,
@@ -307,7 +308,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Ciencias Políticas y Sociales',
+            nombre: 'Facultad de Ciencias Polï¿½ticas y Sociales',
             abreviatura: 'FCPyS',
             logo: '',
             categoria: categorias[2]._id,
@@ -315,7 +316,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Contaduría y Administración',
+            nombre: 'Facultad de Contadurï¿½a y Administraciï¿½n',
             abreviatura: 'FCA',
             logo: '',
             categoria: categorias[2]._id,
@@ -331,32 +332,32 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Economía',
-            abreviatura: 'Facultad de Economía',
+            nombre: 'Facultad de Economï¿½a',
+            abreviatura: 'Facultad de Economï¿½a',
             logo: '',
             categoria: categorias[2]._id,
             posicion: '',
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Estudios Superiores Acatlán',
-            abreviatura: 'FES Acatlán',
+            nombre: 'Facultad de Estudios Superiores Acatlï¿½n',
+            abreviatura: 'FES Acatlï¿½n',
             logo: '',
             categoria: categorias[4]._id,
             posicion: '',
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Estudios Superiores Aragón',
-            abreviatura: 'FES Aragón',
+            nombre: 'Facultad de Estudios Superiores Aragï¿½n',
+            abreviatura: 'FES Aragï¿½n',
             logo: '',
             categoria: categorias[4]._id,
             posicion: '',
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Estudios Superiores Cuautitlán',
-            abreviatura: 'FES Cuautitlán',
+            nombre: 'Facultad de Estudios Superiores Cuautitlï¿½n',
+            abreviatura: 'FES Cuautitlï¿½n',
             logo: '',
             categoria: categorias[4]._id,
             posicion: '',
@@ -379,7 +380,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Filosofía y Letras',
+            nombre: 'Facultad de Filosofï¿½a y Letras',
             abreviatura: 'FFyL',
             logo: '',
             categoria: categorias[3]._id,
@@ -387,7 +388,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Ingeniería',
+            nombre: 'Facultad de Ingenierï¿½a',
             abreviatura: 'FI',
             logo: '',
             categoria: categorias[0]._id,
@@ -411,7 +412,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Música',
+            nombre: 'Facultad de Mï¿½sica',
             abreviatura: 'FaM',
             logo: '',
             categoria: categorias[3]._id,
@@ -419,30 +420,71 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Odontología',
-            abreviatura: 'Facultad de Odontología',
+            nombre: 'Facultad de Odontologï¿½a',
+            abreviatura: 'Facultad de Odontologï¿½a',
             logo: '',
             categoria: categorias[1]._id,
             posicion: '',
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Psicología',
-            abreviatura: 'Facultad de Psicología',
+            nombre: 'Facultad de Psicologï¿½a',
+            abreviatura: 'Facultad de Psicologï¿½a',
             logo: '',
             categoria: categorias[1]._id,
             posicion: '',
             universidad: universidades[1]._id
         },
         {
-            nombre: 'Facultad de Química',
-            abreviatura: 'Facultad de Química',
+            nombre: 'Facultad de Quï¿½mica',
+            abreviatura: 'Facultad de Quï¿½mica',
             logo: '',
             categoria: categorias[4]._id,
             posicion: '',
             universidad: universidades[1]._id
-        }
+        },
         //Escuelas
+        {
+            nombre: 'Escuela Nacional de EnfermerÃ­a y Obstetricia',
+            abreviatura: 'ENEO',
+            logo: '',
+            categoria: categorias[1]._id,
+            posicion: '',
+            universidad: universidades[1]._id
+        },
+        {
+            nombre: 'Escuela Nacional de Estudios Superiores Unidad LeÃ³n',
+            abreviatura: 'ENES, Leon',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '',
+            universidad: universidades[1]._id
+        },
+        {
+            nombre: 'Escuela Nacional de Estudios Superiores, Unidad Morelia',
+            abreviatura: 'ENES, Morelia',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '',
+            universidad: universidades[1]._id
+        },
+        {
+            nombre: 'Escuela Nacional de Lenguas, LingÃ¼Ã­stica y TraducciÃ³n',
+            abreviatura: 'ENALLT',
+            logo: '',
+            categoria: categorias[3]._id,
+            posicion: '',
+            universidad: universidades[1]._id
+        },
+        ,
+        {
+            nombre: 'Escuela Nacional de Trabajo Social',
+            abreviatura: 'Escuela Nacional de Trabajo Social',
+            logo: '',
+            categoria: categorias[3]._id,
+            posicion: '',
+            universidad: universidades[1]._id
+        }
     ];
     sedes.map((item, index) => {
         const sede = new Sede(item);
@@ -469,7 +511,7 @@ function main(req, res) {
             callback(null, 'tres');
         },
         final: function (callback) {
-            console.log('Ya acabó');
+            console.log('Ya acabo');
             callback(null, 'final');
         }
     });
@@ -477,6 +519,13 @@ function main(req, res) {
 
 exports.registro = function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    main(req, res);
+    //main(req, res);
+    /**
+     * Correr metodo por metodo
+     */
+    //carga_universidades(req, res);
+    //carga_categorias(req, res);
+    //carga_sedes(req, res);
+    require('./vicroni').work();
     res.end();
 };
