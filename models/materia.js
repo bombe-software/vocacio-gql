@@ -9,7 +9,7 @@ const materia = mongoose.Schema({
     },
     categoria: {
         type: Schema.Types.ObjectId,
-        ref: 'sede'
+        ref: 'categoria'
     },
     semestre: Number
 });

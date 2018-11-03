@@ -29,6 +29,28 @@ async function carga_carreras_vicroni(){
         sede: sedes[1]._id,
         materias: []
     });
+
+    let materias = [
+        {
+        nombre: 'm1',
+        carera: carrera._id,
+        categoria: categorias[1]._id,
+        semestre: 2
+        },
+        {
+            nombre: 'm1',
+            carera: carrera._id,
+            categoria: categorias[1]._id,
+            semestre: 2
+        }
+    ];
+    materias.map((item, index) => {
+        const materia = new Materia(item);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
     console.log('Hola');
 }
 
