@@ -12,8 +12,14 @@ const CarreraType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLID },
     nombre: { type: GraphQLString },
-    categoria: { type: GraphQLString },
-    semestres: { type: GraphQLString },
+    categoria: {
+        type: require('./categoria'),
+        resolve(parentValue) {
+          return Carrera.findById(parentValue.id).populate('categoria')
+            .then(carrera => carrera.categoria);
+        }
+    },
+    semestres: { type: GraphQLInt },
     sede: {
         type: require('./sede'),
         resolve(parentValue) {
@@ -27,7 +33,7 @@ const CarreraType = new GraphQLObjectType({
           return Carrera.findById(parentValue).populate('materias')
               .then(carrera => carrera.materias);
         }
-      }
+    }
   })
 });
 
