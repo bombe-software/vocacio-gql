@@ -968,79 +968,79 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
         {
             nombre: 'Progrmacion de dispositivos moviles',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
             nombre: 'Redes inalambricas',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
             nombre: 'Redes neuronales',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
             nombre: 'Logica difusa',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
             nombre: 'Sistemas de informacion geografica',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
             nombre: 'Normatividad en telecomunicaciones e informatica',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
             nombre: 'Television digital',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
             nombre: 'Sistemas de calidad',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
             nombre: 'Filtrado avanzado',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
             nombre: 'Criptografia',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
             nombre: 'Microondas',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
             nombre: 'Procesamiento de imagenes',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
             nombre: 'Procesamiento de voz',
             carera: carrera._id,
-            categoria: categoria_materias[10]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         }
     ];
@@ -1056,7 +1056,483 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
     carrera.materias = materias_ids;
     await carrera.save();
 
-    
+    carrera = new Carrera({
+        nombre: 'Ingeniería Bionica',
+        categoria: categorias[0]._id,
+        semestres: 10,
+        sede: sedes[1]._id,
+        materias: []
+    });
+    await carrera.save(); 
+    materias = [ 
+        {
+        nombre: 'Calculo diferencial e integral',
+        carera: carrera._id,
+        categoria: categoria_materias[0]._id,
+        semestre: 1
+        },
+        {
+            nombre: 'Algebra lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Biologia celular',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Quimica organica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Metrologia',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Programacion estructurada',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Bioetica',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Herramientas computacionales',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Calculo vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Anatomia',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Fundamentos de fisica para ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Ingles I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Biologia molecular',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Ecuaciones diferenciales',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Programacion orientada a objetos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fundamentos de teoria electromagnetica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Desarrollo sostenible',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fisicoquimica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fisiologia',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Teoria de los circuitos',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ingles II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Analisis numericos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Bioestadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Bioqumica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Fundamentos matematicos de ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Ondas electromageticas y sistemas radiantes',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas de gestion de calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Dispositivos electronicos',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Ingles III',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Biognosis',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Fisica moderna y optica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electronica analogica y de potencia',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electronica digital',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Sensores y actuadores',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Biomagnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Mecanismos biomimeticos',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Biofisica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Liderazgo y emprendedores',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Biomateriales',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Teoria del control',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Procesamiento de imagenes',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Dispositivos programables',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Analisis de esfuerzos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Investigacion y desarrollo de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Control neurodifuso',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Procesamiento de señales biologicas',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Bioinstrumentacion',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Modelado y control de sistemas bionicos',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Manufactura de elementos biomimeticos',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Reconocimiento de patrones',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Normatividad y gestion tecnologica',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Metodologia de la investigacion',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Biomecanica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Bioelectronica',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Biorobotica',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Servicio social',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Proyecto terminal I ',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Proyecto terminal II',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Simulacion de analisis de esfuerzos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Instrumentacion clinica y de laboratorio',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Vision artificial',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ergonomia y biodinamica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Instrumentacion biomedica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Inteligencia artificial',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Protesis biomimeticas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Robotica evolutiva y autonoma',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Control de sistemas biologicos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Comunicacion oral y escrita',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ingenieria del control humano',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sistemas biomecanicos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Biosensores y biochips',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instrumentacion biotecnologica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Telemetria medica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Imagenologia',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Neuro/Robotica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sistemas sensoriales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        }
+    ];
+    materias_ids = []
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
 }
 
 exports.work = carga_carreras_vicroni;
