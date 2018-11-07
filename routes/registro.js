@@ -69,8 +69,8 @@ async function carga_categoria_materias(req, res) {
         { nombre: 'Herramientas computacionales' },
         { nombre: 'Administracion' },
         { nombre: 'Optativa o electiva' },
-        { nombre: 'Opcion de titulacion' },
-        { nombre: 'Manufactura' }
+        { nombre: 'Manufactura' },
+        { nombre: 'Opcion de titulacion' }
     ];
     await categoria_materias.map((item, index) => {
         const categoria_materia = new CategoriaMateria(item);
