@@ -9,6 +9,7 @@ const Categoria = mongoose.model('categoria');
 const CategoriaMateria = mongoose.model('categoria_materia');
 
 async function carga_universidades(req, res) {
+    let bd_universidades = [];
     //Array de Universidades
     const universidades = [
         {
@@ -24,15 +25,18 @@ async function carga_universidades(req, res) {
     ];
     await universidades.map((item, index) => {
         const universidad = new Universidad(item);
+        bd_universidades.push(universidad);
         universidad.save()
             .then(item => {
                 //console.log(item);
             });
     });
+    return bd_universidades;
 }
 
 async function carga_categorias(req, res) {
     //Array de Categorias
+    let bd_categorias = [];
     const categorias = [
         { nombre: 'Ciencias Fisico Matematicas' },
         { nombre: 'Ciencias Medico Biologicas' },
@@ -42,14 +46,17 @@ async function carga_categorias(req, res) {
     ];
     await categorias.map((item, index) => {
         const categoria = new Categoria(item);
+        bd_categorias.push(categoria);
         categoria.save()
             .then(item => {
                 //console.log(item);
             });
     });
+    return bd_categorias;
 }
 
 async function carga_categoria_materias(req, res) {
+    let bd_categorias_materias = [];
     //Array de Categorias
     const categoria_materias = [
         { nombre: 'Matematicas' },
@@ -67,23 +74,17 @@ async function carga_categoria_materias(req, res) {
     ];
     await categoria_materias.map((item, index) => {
         const categoria_materia = new CategoriaMateria(item);
+        bd_categorias_materias.push(categoria_materia);
         categoria_materia.save()
             .then(item => {
                 //console.log(item);
             });
     });
+    return bd_categorias_materias;
 }
 
-async function carga_sedes(req, res) {
-    let universidades;
-    await Universidad.find({}, function (err, obj) {
-        universidades = obj;
-    });
-    let categorias;
-    await Categoria.find({}, function (err, obj) {
-        categorias = obj;
-    });
-    
+async function carga_sedes(req, res, universidades, categorias) {
+    const bd_sedes = [];
     const sedes = [
         //Escuelas del IPN
         //Area Fisico Matematica
@@ -513,21 +514,38 @@ async function carga_sedes(req, res) {
     ];
     await sedes.map((item, index) => {
         const sede = new Sede(item);
+        bd_sedes.push(sede);
         sede.save()
             .then(item => {
                 //console.log(item);
-            });
+        });
     });
+
+    Universidad.find({}, function (err, obj) {
+        obj.map(universidad =>{
+            Sede.find({universidad: universidad._id}, function (err, obj1) {
+                obj1.map(sede_i=>{
+                    universidad.sedes.push(sede_i._id);
+                });
+                setTimeout(()=>{
+                    universidad.save();
+                    console.log('Registros asincronos[0]')
+                }, 5000);
+            });           
+        });
+    });
+
+    return bd_sedes;
 };
 
 async function main(req, res) {
     //Se encarga de que las funciones se ejecuten en serie
-    await carga_universidades(req, res);
-    await carga_categorias(req, res);
-    await carga_sedes(req, res);
-    await carga_categoria_materias(req, res);
-    await require('./vicroni').work();
-    console.log('Acabo');
+    const universidades = await carga_universidades(req, res);
+    const categorias =  await carga_categorias(req, res);
+    const categoria_materias = await carga_categoria_materias(req, res);
+    const sedes = await carga_sedes(req, res, universidades, categorias);
+    await require('./vicroni').work(categorias, categoria_materias, sedes);
+    console.log('Acabo el proseso sincrono');
 } 
 
 exports.registro = function (req, res) {

@@ -8,21 +8,8 @@ const Materia = mongoose.model('materia');
 const Categoria = mongoose.model('categoria');
 
 
-async function carga_carreras_vicroni(){
-    let universidades;
-    await Universidad.find({}, function (err, obj) {
-        universidades = obj;
-    });
-    let categorias;
-    await Categoria.find({}, function (err, obj) {
-        categorias = obj;
-    });
-    let sedes;
-    await Sede.find({}, function (err, obj) {
-        sedes = obj;
-    });
-
-    const carrera = new Carrera({
+async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
+    let carrera = new Carrera({
         nombre: 'Ingeniería Mecatrónica',
         categoria: categorias[0]._id,
         semestres: 10,
@@ -34,91 +21,91 @@ async function carga_carreras_vicroni(){
         {
         nombre: 'Calculo diferencial e integral',
         carera: carrera._id,
-        categoria: categorias[0]._id,
+        categoria: categoria_materias[0]._id,
         semestre: 1
         },
         {
             nombre: 'Algebra lineal y numeros complejos',
             carera: carrera._id,
-            categoria: categorias[0]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Mecanica de la particula',
             carera: carrera._id,
-            categoria: categorias[1]._id,
+            categoria: categoria_materias[1]._id,
             semestre: 1
         },
         {
             nombre: 'Introduccion a la mecatronica',
             carera: carrera._id,
-            categoria: categorias[8]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 1
         },
         {
             nombre: 'Estructura y propiedades de los materiales',
             carera: carrera._id,
-            categoria: categorias[2]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 1
         },
         {
             nombre: 'Herramientas computacionales',
             carera: carrera._id,
-            categoria: categorias[7]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
             nombre: 'Introduccion a la programacion',
             carera: carrera._id,
-            categoria: categorias[6]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 1
         },
         {
             nombre: 'Dibujo asistido por computadora',
             carera: carrera._id,
-            categoria: categorias[7]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
             nombre: 'Ecuaciones diferenciales',
             carera: carrera._id,
-            categoria: categorias[0]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Calculo vectorial',
             carera: carrera._id,
-            categoria: categorias[0]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Mecanica del cuerpo rigido',
             carera: carrera._id,
-            categoria: categorias[1]._id,
+            categoria: categoria_materias[1]._id,
             semestre: 2
         },
         {
             nombre: 'Comunicacion oral y escrita',
             carera: carrera._id,
-            categoria: categorias[3]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
             nombre: 'Circuitos electricos',
             carera: carrera._id,
-            categoria: categorias[5]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 2
         },
         {
             nombre: 'Manufactura',
             carera: carrera._id,
-            categoria: categorias[5]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 2
         },
         {
             nombre: 'Analisis y diseño de programas',
             carera: carrera._id,
-            categoria: categorias[6]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 2
         }
     ];
@@ -134,18 +121,6 @@ async function carga_carreras_vicroni(){
     carrera.materias = materias_ids;
     await carrera.save();
 
-    let universidades;
-    await Universidad.find({}, function (err, obj) {
-        universidades = obj;
-    });
-    let categorias;
-    await Categoria.find({}, function (err, obj) {
-        categorias = obj;
-    });
-    let sedes;
-    await Sede.find({}, function (err, obj) {
-        sedes = obj;
-    });
 
     carrera = new Carrera({
         nombre: 'Ingeniería Telematica',
@@ -159,95 +134,95 @@ async function carga_carreras_vicroni(){
         {
         nombre: 'Calculo diferencial e integral',
         carera: carrera._id,
-        categoria: categorias[0]._id,
+        categoria: categoria_materias[0]._id,
         semestre: 1
         },
         {
             nombre: 'Algebra lineal y numeros complejos',
             carera: carrera._id,
-            categoria: categorias[0]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Mecanica de la particula',
             carera: carrera._id,
-            categoria: categorias[1]._id,
+            categoria: categoria_materias[1]._id,
             semestre: 1
         },
         {
             nombre: 'Introduccion a la mecatronica',
             carera: carrera._id,
-            categoria: categorias[8]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 1
         },
         {
             nombre: 'Estructura y propiedades de los materiales',
             carera: carrera._id,
-            categoria: categorias[2]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 1
         },
         {
             nombre: 'Herramientas computacionales',
             carera: carrera._id,
-            categoria: categorias[7]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
             nombre: 'Introduccion a la programacion',
             carera: carrera._id,
-            categoria: categorias[6]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 1
         },
         {
             nombre: 'Dibujo asistido por computadora',
             carera: carrera._id,
-            categoria: categorias[7]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
             nombre: 'Ecuaciones diferenciales',
             carera: carrera._id,
-            categoria: categorias[0]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Calculo vectorial',
             carera: carrera._id,
-            categoria: categorias[0]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Mecanica del cuerpo rigido',
             carera: carrera._id,
-            categoria: categorias[1]._id,
+            categoria: categoria_materias[1]._id,
             semestre: 2
         },
         {
             nombre: 'Comunicacion oral y escrita',
             carera: carrera._id,
-            categoria: categorias[3]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
             nombre: 'Circuitos electricos',
             carera: carrera._id,
-            categoria: categorias[5]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 2
         },
         {
             nombre: 'Manufactura',
             carera: carrera._id,
-            categoria: categorias[5]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 2
         },
         {
             nombre: 'Analisis y diseño de programas',
             carera: carrera._id,
-            categoria: categorias[6]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 2
         }
     ];
-    let materias_ids = []
+    materias_ids = []
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
