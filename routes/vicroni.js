@@ -1533,6 +1533,634 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
     });
     carrera.materias = materias_ids;
     await carrera.save();
+
+    carrera = new Carrera({
+        nombre: 'Ingeniería Civil',
+        categoria: categorias[0]._id,
+        semestres: 10,
+        sede: sedes[4]._id,
+        materias: []
+    });
+    await carrera.save(); 
+    materias = [ 
+        {
+            nombre: 'Expresion grafica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fisica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Geologia',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Herramientas computacionales',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Matematicas I',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Relaciones humanas',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Dinamica de la particula',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Matematicas II',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Programacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Quimica basica y aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sociologia',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Transporte e ingenieria de transito',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Economia',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estatica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Expresion grafica II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ingenieria sanitaria y ambiental',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Matematicas III',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Topografia',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estructuras isotaticas',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Geomatica',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Hidraulica basica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Matematicas IV',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Mecanica de suelos I',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Procedimientos constructivos I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Matematicas V',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Mecanica de los suelos II',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Movimiento de la tierra',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Residuos solidos urbanos',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Resistencia de materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Tuberias y canales',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Caminos y ferrrocarriles',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Estructura y desarrollo de Mexico',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Estructura de mamposteria',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Hidrologia',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Ingenieria de sistemas I',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Mecanica de suelos III',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Agua potable',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Analisis estructural',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Modelos estocasticos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Obras hidraulicas de captacion superficial',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Pavimentos y terracerias',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Procedimientos constructivos II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Procedimientos constructivos II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Administracion',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Alcantarillado',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Estructuras de concreto',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Mecanica de rocas',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Puentes',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Zonas de riesgo y drenaje',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Aeropuertos',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Estructuras de acero',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instalaciones hidraulicas y sanitarias',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Metodologia de la investigacion',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Planeacion',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Hidraulica maritima',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Obras de infraestructura',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Obras de infraestructura',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Formulacion de proyectos de inversion',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Desarrollo de aplicaciones informaticas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Ingenieria sismica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Aprovecahmientos hidraulicos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Hidraulica fluvial',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Calidad del agua y contaminacion de cuerpos de agua',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Proyecto y construccion de sistemas de agua potable',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Diseño contrucccion y monitoreo de un relleno sanitario',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Cimentaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Drenaje y paisajes',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Planificacion urbana',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Normatividad de la obra publica y licitaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Control de calidad de materiales naturales y artificiales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Administracion de obras civiles',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Sistemas de informacion',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Diseño de cimentaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Manejo integral de cuencas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Hidroinformatica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Hidraulica experimental',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Fundamentos de potabilizacion y tratamiento de agua',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Proyecto y construccion de sistemas de alcantarillado',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Geologia aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Terracerias',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Ingenieria de transito',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Desarrollo integral de la ingenieria I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Control de calidad ISO en ingenieria civil',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Evaluacion de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Concreto presforzado',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Estructuras especiales de acero',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Estructuras especiales de concreto',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Generacion de energia',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Modernizacion de zonas de riesgo',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Ingenieria de costas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Modernizacion de plantas de tratamiento',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Modernizacion de plantas potabilizadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Operacion, mantenimiento y administracion de servicios municipales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Taller de geotecnia',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Tecnicas de drenaje',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Proyectos de caminos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Ingenieria de transporte',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Proyecto de puentes',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Proyecto de aeropuertos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Desarrollo integral de la ingenieria II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Control de calidad en procesos construtivos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        }
+    ];
+    materias_ids = []
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
 }
 
 exports.work = carga_carreras_vicroni;

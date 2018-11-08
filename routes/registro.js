@@ -70,7 +70,9 @@ async function carga_categoria_materias(req, res) {
         { nombre: 'Administracion' },
         { nombre: 'Optativa o electiva' },
         { nombre: 'Manufactura' },
-        { nombre: 'Opcion de titulacion' }
+        { nombre: 'Opcion de titulacion' },
+        { nombre: 'Geografia' },
+        { nombre: 'Arquitectura y construccion' }
     ];
     await categoria_materias.map((item, index) => {
         const categoria_materia = new CategoriaMateria(item);
@@ -121,6 +123,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //Vicroni
         {
             nombre: 'Escuela Superior de Ingenieria y Arquitectura Unidad Zacatenco',
             abreviatura: 'ESIA',
