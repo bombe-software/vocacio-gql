@@ -8,7 +8,7 @@ const Materia = mongoose.model('materia');
 const Categoria = mongoose.model('categoria');
 
 
-async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
+async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     let carrera = new Carrera({
         nombre: 'Ingeniería Mecatrónica',
         categoria: categorias[0]._id,
@@ -16,13 +16,13 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
         sede: sedes[1]._id,
         materias: []
     });
-    await carrera.save(); 
-    let materias = [ 
+    await carrera.save();
+    let materias = [
         {
-        nombre: 'Calculo diferencial e integral',
-        carera: carrera._id,
-        categoria: categoria_materias[0]._id,
-        semestre: 1
+            nombre: 'Calculo diferencial e integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
         },
         {
             nombre: 'Algebra lineal y numeros complejos',
@@ -615,13 +615,13 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
         sede: sedes[1]._id,
         materias: []
     });
-    await carrera.save(); 
-    materias = [ 
+    await carrera.save();
+    materias = [
         {
-        nombre: 'Calculo diferencial e integral',
-        carera: carrera._id,
-        categoria: categoria_materias[0]._id,
-        semestre: 1
+            nombre: 'Calculo diferencial e integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
         },
         {
             nombre: 'Algebra lineal',
@@ -1063,13 +1063,13 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
         sede: sedes[1]._id,
         materias: []
     });
-    await carrera.save(); 
-    materias = [ 
+    await carrera.save();
+    materias = [
         {
-        nombre: 'Calculo diferencial e integral',
-        carera: carrera._id,
-        categoria: categoria_materias[0]._id,
-        semestre: 1
+            nombre: 'Calculo diferencial e integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
         },
         {
             nombre: 'Algebra lineal',
@@ -1541,8 +1541,8 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
         sede: sedes[4]._id,
         materias: []
     });
-    await carrera.save(); 
-    materias = [ 
+    await carrera.save();
+    materias = [
         {
             nombre: 'Expresion grafica',
             carera: carrera._id,
