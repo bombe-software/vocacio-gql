@@ -79,6 +79,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenier�a y Arquitectura Unidad Ticom�n',
             abreviatura: 'ESIA',
@@ -103,6 +104,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenier�a Mec�nica y El�ctrica Unidad Azcapotzalco',
             abreviatura: 'ESIME',
@@ -127,6 +129,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingenier�a Campus Zacatecas',
             abreviatura: 'UPIIZ',
@@ -134,7 +137,7 @@ async function carga_sedes(req, res) {
             categoria: categorias[0]._id,
             posicion: '',
             universidad: universidades[0]._id
-        },
+        },       
         {
             nombre: 'Escuela Superior de Ingenier�a Mec�nica y El�ctrica Unidad Ticom�n',
             abreviatura: 'ESIME',
@@ -151,6 +154,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+         //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenier�a Mec�nica y El�ctrica Unidad Zacatenco',
             abreviatura: 'ESIME',
@@ -175,6 +179,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenier�a Textil',
             abreviatura: 'ESIT',
@@ -200,6 +205,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         //�rea M�dico Biol�gicas
+        //MedinaVilla
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Milpa Alta',
             abreviatura: 'CICS',
@@ -224,6 +230,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Enfermer�a y Obstetricia',
             abreviatura: 'ESEO',
@@ -249,6 +256,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[0]._id
         },
         //�rea Sociales y Administrativas
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Comercio y Administraci�n Unidad Santo Tom�s',
             abreviatura: 'ESCA',
@@ -273,6 +281,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Turismo',
             abreviatura: 'EST',
@@ -298,7 +307,8 @@ async function carga_sedes(req, res) {
             categoria: categorias[3]._id,
             posicion: '',
             universidad: universidades[1]._id
-        },
+        }, 
+        //MedinaVilla
         {
             nombre: 'Facultad de Ciencias',
             abreviatura: 'Facultad de Ciencias',
@@ -323,6 +333,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Derecho',
             abreviatura: 'Facultad de Derecho',
@@ -347,6 +358,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Estudios Superiores Arag�n',
             abreviatura: 'FES Arag�n',
@@ -371,6 +383,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
+         //MedinaVilla
         {
             nombre: 'Facultad de Estudios Superiores Zaragoza',
             abreviatura: 'FES Zaragoza',
@@ -395,6 +408,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Medicina',
             abreviatura: 'FacMed',
@@ -419,6 +433,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Odontolog�a',
             abreviatura: 'Facultad de Odontolog�a',
@@ -444,6 +459,7 @@ async function carga_sedes(req, res) {
             universidad: universidades[1]._id
         },
         //Escuelas
+        //MedinaVilla
         {
             nombre: 'Escuela Nacional de Enfermería y Obstetricia',
             abreviatura: 'ENEO',
@@ -468,6 +484,7 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Nacional de Lenguas, Lingüística y Traducción',
             abreviatura: 'ENALLT',
@@ -476,7 +493,6 @@ async function carga_sedes(req, res) {
             posicion: '',
             universidad: universidades[1]._id
         },
-        ,
         {
             nombre: 'Escuela Nacional de Trabajo Social',
             abreviatura: 'Escuela Nacional de Trabajo Social',
