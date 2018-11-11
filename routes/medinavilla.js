@@ -4812,7 +4812,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 8
         },
         {
-            nombre: 'Sistema de Control de Modelos Auomotrices',
+            nombre: 'Sistema de Control de Modelos Automotrices',
             carera: carrera._id,
             categoria: categorias[1]._id,
             semestre: 8
