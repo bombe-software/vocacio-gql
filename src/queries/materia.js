@@ -12,7 +12,7 @@ const MateriaType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLID },
     nombre: { type: GraphQLString },
-    carera: {
+    carrera: {
       type: require('./carrera'),
       resolve(parentValue) {
         return Materia.findById(parentValue.id).populate('carrera')
@@ -22,8 +22,8 @@ const MateriaType = new GraphQLObjectType({
     categoria: {
       type: require('./categoria_materia'),
       resolve(parentValue) {
-        return Materia.findById(parentValue.id).populate('categoria_materia')
-          .then(materia => materia.categoria_materia);
+        return Materia.findById(parentValue.id).populate('categoria')
+          .then(materia => materia.categoria);
       }
     },
     semestre: { type: GraphQLInt },

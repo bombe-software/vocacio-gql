@@ -2161,6 +2161,984 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes){
     });
     carrera.materias = materias_ids;
     await carrera.save();
+
+    carrera = new Carrera({
+        nombre: 'Ingeniería en Computación',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+    await carrera.save(); 
+    materias = [ 
+        {
+            nombre: 'Fundamentos de programacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Calculo diferencial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fundamentos de algebra',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fisica clasica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Quimica basica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Humanidades I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Algebra lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Calculo vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Electricidad y magnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Matematicas discretas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Programacion orientada a objetos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Humanidades II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Humanidades II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Ecuaciones diferenciales',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Circuitos de corriente alterna y corriente directa',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Circuitos logicos I',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Lenguajes de bajo nivel',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estructura de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Humanidades III',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Analisis numerico',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Variable compleja y analisis de fourier',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Circuitos logicos II',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Electronica analogica',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Teoria de automatas',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Humaidades IV',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Analisis de algoritmos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Analisis y señales analogicas',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Compiladores',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Organizacion de computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Probabilidad y estadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Humanidades V',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Arquitectura de computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Ingenieria de software',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Metodologia de la investigacion',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Modulacion digital',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Sistemas operativos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Teoria de control analogico',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Teoria de la informacion y codificacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Teoria de control digital',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Bases de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Nuevas tecnologias de la informacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Administracion de la ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Proyecto de ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Formulacion y evaluacion de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Redes de computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Sistemas distribuidos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Algoritmos de computo',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Computo aplicado a sistemas ecologicos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Interfaces inteligentes',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Transferencia y procesamiento de la informacion',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas de informacion I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Algoritmos de computo II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Computo aplicado a sistemas ecologicos II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Interfaces inteligentes II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Transferencia y procesamiento de la informacion II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Sistemas de informacion II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Redes neuronales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Inteligencia artificial',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Programacion logica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Diseño asistido por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Lenguajes para arquitectura en paralelo',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Sistemas expertos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        }
+    ];
+    materias_ids = []
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    carrera = new Carrera({
+        nombre: 'Comunicaciones y electronica',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+    await carrera.save(); 
+    materias = [ 
+        {
+            nombre: 'Fundamentos de programacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Calculo diferencial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fundamentos de algebra',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fisica clasica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Quimica basica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Humanidades I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Algebra lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Calculo vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Ecuaciones diferenciales',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Electricidad y magnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Quimica aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Programacion orientada a objetos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Humanidades II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Variable compleja',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Transformadas de funciones',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ondas mecanicas',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Circuitos de corriente directa y corriente alterna',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Campos y ondas electromagneticas',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estructuras y bases de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Probabilidad y estadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Mediciones',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Economia',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Mecanica cuantica y mecanica estadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Ondas electromagneticas guiadas',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Analisis numerico',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Electronica lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electronica digital',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Analisis de transitorios',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Teora de radiadores electromagneticos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Fundamentos de maquinas electricas',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electronica lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Electronica digital',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Comunicaciones digitales',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Señales y vibraciones',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Señales y sistemas de control clasico',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Microprocesadores',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Humanidades III',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Generacion y evaluacion de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Microcontroladores',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Procesamiento digital de señales',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Electroacustica y transductores',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Espacio de estado',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Redes basicas',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Humanidades IV',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Calidad en la ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Desarrollo Prospectivo de Proyectos o Tópicos selectos de Ingeniería',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Humanidades V',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Proyecto de ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Acústica Arquitectural',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Grabación',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Metrología Acústica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Psicoacústica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Arquitectura de Computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ingeniería de Software',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Lenguajes de Internet',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Redes LAN',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Comunicaciones por medio de Fibra óptica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Electrónica Analógica de Comunicaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Redes de Área Amplia',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Teoría de Codificación y Mnajeo de Información',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Control Analógico:Servomecanismos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Control con uso de PLC',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Control Digital',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Instrumentación de Procesos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Electrónica de Potencia I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Instrumentación I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Instrumentación I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Transmisores',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Acústica Musical',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Bioacústica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Reconocimiento y sístesis de voz',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Ruido y Vibraciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Ruido y Vibraciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Agentes Inteligentes Externos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Aplicaciones de Redes de Computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sistemas en Tiempo Real',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Visión por Computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Diseño y Administración de Redes',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Redes Convergentes',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sincronización y Multiplexaje',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sistemas de Radiocomunicaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Control Distribuido',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Control Inteligente',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sistema de Adquisición de Datos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Sistemas no Lineales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Electrónica de Potencia II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instrumentación III',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Receptores',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Televisión y Video',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        }
+    ];
+    materias_ids = []
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    carrera = new Carrera({
+        nombre: 'Mecanica',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+    await carrera.save(); 
+    materias = [ 
+        {
+            nombre: 'Televisión y Video',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        }
+    ];
+    materias_ids = []
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
 }
 
 exports.work = carga_carreras_vicroni;

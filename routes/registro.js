@@ -148,6 +148,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //Vicroni
         {
             nombre: 'Escuela Superior de Ingenieria Mecanica y Electrica Unidad Culhuacan',
             abreviatura: 'ESIME',
