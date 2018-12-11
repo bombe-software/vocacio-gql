@@ -59,20 +59,20 @@ async function carga_categoria_materias(req, res) {
     let bd_categorias_materias = [];
     //Array de Categorias
     const categoria_materias = [
-        { nombre: 'Matematicas' },
-        { nombre: 'Fisica' },
-        { nombre: 'Quimica' },
-        { nombre: 'Humanidades y Artes' },
-        { nombre: 'Biologia' },
-        { nombre: 'Electronica' },
-        { nombre: 'Programacion' },
-        { nombre: 'Herramientas computacionales' },
-        { nombre: 'Administracion' },
-        { nombre: 'Optativa o electiva' },
-        { nombre: 'Manufactura' },
-        { nombre: 'Opcion de titulacion' },
-        { nombre: 'Geografia' },
-        { nombre: 'Arquitectura y construccion' }
+        /*0*/{ nombre: 'Matemáticas' },
+        /*1*/{ nombre: 'Física' },
+        /*2*/{ nombre: 'Química' },
+        /*3*/{ nombre: 'Humanidades y Artes' },
+        /*4*/{ nombre: 'Biología' },
+        /*5*/{ nombre: 'Electrónica' },
+        /*6*/{ nombre: 'Programación' },
+        /*7*/{ nombre: 'Herramientas Computacionales' },
+        /*8*/{ nombre: 'Administración' },
+        /*9*/{ nombre: 'Optativa o Electiva' },
+       /*10*/{ nombre: 'Manufactura' },
+       /*11*/{ nombre: 'Opción de Titulación' },
+       /*12*/{ nombre: 'Geografía' },
+       /*13*/{ nombre: 'Arquitectura y Construcción' }
     ];
     await categoria_materias.map((item, index) => {
         const categoria_materia = new CategoriaMateria(item);
@@ -90,6 +90,7 @@ async function carga_sedes(req, res, universidades, categorias) {
     const sedes = [
         //Escuelas del IPN
         //Area Fisico Matematica
+        //
         {
             nombre: 'Escuela Superior de Computo',
             abreviatura: 'ESCOM',
@@ -107,6 +108,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenieria y Arquitectura Unidad Ticoman',
             abreviatura: 'ESIA',
@@ -115,6 +117,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //
         {
             nombre: 'Escuela Superior de Fisico Matem�ticas',
             abreviatura: 'ESFM',
@@ -132,6 +135,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenieria Mecanica y Electrica Unidad Azcapotzalco',
             abreviatura: 'ESIME',
@@ -157,6 +161,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingenieria Campus Zacatecas',
             abreviatura: 'UPIIZ',
@@ -164,7 +169,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             categoria: categorias[0]._id,
             posicion: '',
             universidad: universidades[0]._id
-        },
+        },       
         {
             nombre: 'Escuela Superior de Ingenieria Mec�nica y Electrica Unidad Ticoman',
             abreviatura: 'ESIME',
@@ -181,6 +186,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+         //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenieria Mecanica y Electrica Unidad Zacatenco',
             abreviatura: 'ESIME',
@@ -205,6 +211,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Ingenieria Textil',
             abreviatura: 'ESIT',
@@ -230,6 +237,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id
         },
         //�rea M�dico Biol�gicas
+        //MedinaVilla
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Milpa Alta',
             abreviatura: 'CICS',
@@ -254,6 +262,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Enfermeria y Obstetricia',
             abreviatura: 'ESEO',
@@ -279,6 +288,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id
         },
         //�rea Sociales y Administrativas
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Comercio y Administracion Unidad Santo Tomas',
             abreviatura: 'ESCA',
@@ -303,6 +313,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Superior de Turismo',
             abreviatura: 'EST',
@@ -328,7 +339,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             categoria: categorias[3]._id,
             posicion: '',
             universidad: universidades[1]._id
-        },
+        }, 
+        //MedinaVilla
         {
             nombre: 'Facultad de Ciencias',
             abreviatura: 'Facultad de Ciencias',
@@ -353,6 +365,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Derecho',
             abreviatura: 'Facultad de Derecho',
@@ -377,6 +390,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Estudios Superiores Aragon',
             abreviatura: 'FES Aragon',
@@ -401,6 +415,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+         //MedinaVilla
         {
             nombre: 'Facultad de Estudios Superiores Zaragoza',
             abreviatura: 'FES Zaragoza',
@@ -425,6 +440,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Medicina',
             abreviatura: 'FacMed',
@@ -449,6 +465,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Odontologia',
             abreviatura: 'Facultad de Odontologia',
@@ -474,6 +491,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[1]._id
         },
         //Escuelas
+        //MedinaVilla
         {
             nombre: 'Escuela Nacional de Enfermería y Obstetricia',
             abreviatura: 'ENEO',
@@ -498,6 +516,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Escuela Nacional de Lenguas, Lingüística y Traducción',
             abreviatura: 'ENALLT',
@@ -506,7 +525,6 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
-        ,
         {
             nombre: 'Escuela Nacional de Trabajo Social',
             abreviatura: 'Escuela Nacional de Trabajo Social',
@@ -549,6 +567,7 @@ async function main(req, res) {
     const categoria_materias = await carga_categoria_materias(req, res);
     const sedes = await carga_sedes(req, res, universidades, categorias);
     await require('./vicroni').work(categorias, categoria_materias, sedes);
+    await require('./yosafat').work(categorias, categoria_materias, sedes);
     console.log('Acabo el proseso sincrono');
 } 
 
