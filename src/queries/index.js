@@ -45,6 +45,16 @@ const RootQuery = new GraphQLObjectType({
         return Carrera.findById(id);
       }
     },
+    carrera2: {
+      type: new GraphQLList(require('./carrera')),
+      args: {
+        id1: { type: new GraphQLNonNull(GraphQLID) },
+        id2: { type: new GraphQLNonNull(GraphQLID) }
+      },
+      resolve(parentValue, { id1, id2 }) {
+        return [Carrera.findById(id1), Carrera.findById(id2)];
+      }
+    },
     materias: {
       type: new GraphQLList(require('./materia')),
       resolve() {
