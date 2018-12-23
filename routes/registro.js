@@ -197,6 +197,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //Yosafat
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingenieria Campus Guanajuato',
             abreviatura: 'UPIIG',
