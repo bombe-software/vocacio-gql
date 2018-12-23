@@ -90,7 +90,7 @@ async function carga_sedes(req, res, universidades, categorias) {
     const sedes = [
         //Escuelas del IPN
         //Area Fisico Matematica
-        //
+        //Yosafat (en niveles)
         {
             nombre: 'Escuela Superior de Computo',
             abreviatura: 'ESCOM',
@@ -117,7 +117,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
-        //
+        //Yosafat
         {
             nombre: 'Escuela Superior de Fisico Matem�ticas',
             abreviatura: 'ESFM',
@@ -144,6 +144,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
+        //Yosafat (en niveles)
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Biotecnologia',
             abreviatura: 'UPIBI',
@@ -170,6 +171,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },       
+        //Yosafat
         {
             nombre: 'Escuela Superior de Ingenieria Mec�nica y Electrica Unidad Ticoman',
             abreviatura: 'ESIME',
