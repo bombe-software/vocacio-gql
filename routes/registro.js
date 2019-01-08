@@ -566,15 +566,16 @@ async function carga_sedes(req, res, universidades, categorias) {
 
 async function main(req, res) {
     //Se encarga de que las funciones se ejecuten en serie
+    
     const universidades = await carga_universidades(req, res);
     const categorias =  await carga_categorias(req, res);
     const categoria_materias = await carga_categoria_materias(req, res);
     const sedes = await carga_sedes(req, res, universidades, categorias);
-    await require('./vicroni').work(categorias, categoria_materias, sedes);
-    await require('./yosafat').work(categorias, categoria_materias, sedes);
-    await require('./medinavilla').work(categorias, categoria_materias, sedes);
+    require('./medinavilla').work(categorias, categoria_materias, sedes);
+    require('./vicroni').work(categorias, categoria_materias, sedes);
+    require('./yosafat').work(categorias, categoria_materias, sedes);
     console.log('Acabo el proceso sincrono');
-} 
+}  
 
 exports.registro = function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/plain' });

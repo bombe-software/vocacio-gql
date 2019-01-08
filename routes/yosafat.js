@@ -2903,7 +2903,7 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
             carera: carrera._id,
             categoria: categoria_materias[7]._id,
             semestre: 1
-        }
+        },
         //Aquí
         {
             nombre: 'Cálculo Integral',
