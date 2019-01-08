@@ -237,7 +237,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id
         },
         //�rea M�dico Biol�gicas
-        //MedinaVilla
+        //MedinaVilla*
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Milpa Alta',
             abreviatura: 'CICS',
@@ -262,7 +262,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[0]._id
         },
-        //MedinaVilla
+        //MedinaVilla*
         {
             nombre: 'Escuela Superior de Enfermeria y Obstetricia',
             abreviatura: 'ESEO',
@@ -432,6 +432,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '',
             universidad: universidades[1]._id
         },
+        //MedinaVilla
         {
             nombre: 'Facultad de Ingenieria',
             abreviatura: 'FI',
@@ -568,7 +569,8 @@ async function main(req, res) {
     const sedes = await carga_sedes(req, res, universidades, categorias);
     await require('./vicroni').work(categorias, categoria_materias, sedes);
     await require('./yosafat').work(categorias, categoria_materias, sedes);
-    console.log('Acabo el proseso sincrono');
+    await require('./medinavilla').work(categorias, categoria_materias, sedes);
+    console.log('Acabo el proceso sincrono');
 } 
 
 exports.registro = function (req, res) {
