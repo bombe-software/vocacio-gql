@@ -9,7 +9,6 @@ const Categoria = mongoose.model('categoria');
 
 
 async function carga_carreras_medinavilla(categorias, categoria_materias, sedes) {
-
     let carrera = new Carrera({
         nombre: 'Ingenieria mecanica',
         categoria: categorias[0]._id,
@@ -7922,6 +7921,4 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
 
 
 
-exports.work = function () {
-    carga_carreras_medinavilla();
-};
+exports.work = carga_carreras_medinavilla;

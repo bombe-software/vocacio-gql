@@ -571,9 +571,9 @@ async function main(req, res) {
     const categorias =  await carga_categorias(req, res);
     const categoria_materias = await carga_categoria_materias(req, res);
     const sedes = await carga_sedes(req, res, universidades, categorias);
-    setTimeout(function(){ require('./medinavilla').work(categorias, categoria_materias, sedes); }, 3000);
-    setTimeout(function(){ require('./vicroni').work(categorias, categoria_materias, sedes); }, 3000);
-    setTimeout(function(){ require('./yosafat').work(categorias, categoria_materias, sedes); }, 3000);
+    setTimeout(function(){ require('./vicroni').work(categorias, categoria_materias, sedes); }, 6000);
+    setTimeout(function(){ require('./medinavilla').work(categorias, categoria_materias, sedes); }, 6000);
+    setTimeout(function(){ require('./yosafat').work(categorias, categoria_materias, sedes); }, 6000);
     console.log('Acabo el proceso sincrono');
 }  
 
