@@ -21,8 +21,14 @@ async function carga_universidades(req, res) {
             nombre: "Universidad Autónoma de México",
             abreviatura: "UNAM",
             logo: "UNAM.jpg"
+        },
+        {
+            nombre: "Universidad Autónoma Metropolitana",
+            abreviatura: "UAM",
+            logo: ""
         }
     ];
+
     await universidades.map((item, index) => {
         const universidad = new Universidad(item);
         bd_universidades.push(universidad);
@@ -538,6 +544,47 @@ async function carga_sedes(req, res, universidades, categorias) {
             categoria: categorias[3]._id,
             posicion: '19.32378770556861,-99.1869256',
             universidad: universidades[1]._id
+        },
+        //Escuelas de la UAM
+        {
+            nombre: 'Universidad Autónoma Metropolitana Unidad Azcapotzalco',
+            abreviatura: 'UAM Azcapotzalco',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '19.50341870562458,-99.18697279999998',
+            universidad: universidades[2]._id
+        },
+        {
+            nombre: 'Universidad Autónoma Metropolitana Unidad Cuajimalpa',
+            abreviatura: 'UAM Cuajimalpa',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '19.352113305577415,-99.2826359',
+            universidad: universidades[2]._id
+        },
+        {
+            nombre: 'Universidad Autónoma Metropolitana Unidad Iztapalapa',
+            abreviatura: 'UAM Iztapalapa',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '19.36235650558061,-99.07285160000004',
+            universidad: universidades[2]._id
+        },
+        {
+            nombre: 'Universidad Autónoma Metropolitana Unidad Lerma',
+            abreviatura: 'UAM Lerma',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '19.29150210555856,-99.50184139999999',
+            universidad: universidades[2]._id
+        },
+        {
+            nombre: 'Universidad Autónoma Metropolitana Unidad Xochimilco',
+            abreviatura: 'UAM Xochimilco',
+            logo: '',
+            categoria: categorias[4]._id,
+            posicion: '19.287270205557228,-99.1371322',
+            universidad: universidades[2]._id
         }
     ];
     await sedes.map((item, index) => {
@@ -557,7 +604,7 @@ async function carga_sedes(req, res, universidades, categorias) {
                 });
                 setTimeout(()=>{
                     universidad.save();
-                    console.log('Registros asincronos[0]')
+                    console.log('Registros asíncronos[0]')
                 }, 5000);
             });           
         });
