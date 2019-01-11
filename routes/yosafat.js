@@ -10,10 +10,316 @@ const Categoria = mongoose.model('categoria');
 
 async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
     //ESCOM (Está en Niveles)
+    let carrera = new Carrera({
+        nombre: 'Ingeniería en Sistemas Computacionales',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[0]._id,
+        materias: []
+    });
+
+    await carrera.save();
+    let materias = [
+        {
+            nombre: 'Análisis Vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Cálculo',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Matemáticas Discretas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Algoritmia y Programación Estructurada',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Física',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Ingeniería Ética y Sociedad',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Ecuaciones Diferenciales',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Álgebra Lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Cálculo Aplicado',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Comunicación Oral y Escrita',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Análisis Fundamental de Circuitos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Probabilidad y Estadística',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fundamentos Económicos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Bases de Datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Programación Orientada a Objetos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fundamentos de Diseño Digital',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Electrónica Analógica',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Matemáticas Avanzadas para la Ingeniería',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Tecnologías para la Web',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Análisis y Diseño Orientado a Objetos',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas Operativos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Diseño de Sistemas Digitales',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Teoría Computacional',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Teoría de Comunicaciones y Señales',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Administración Financiera',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Análisis de Algoritmos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Redes de Computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Instrumentación',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Compiladores',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Optativa A',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Administración de Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Ingeniería de Software',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Aplicaciones para Comunicaciones en Red',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Arquitectura de Computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Optativa B',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Optativa C',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Métodos Cuantitativos para la Toma de Decisiones',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Trabajo Terminal I',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Administración de Servicios en Red',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Introducción de Servicios en Red',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Introducción a los Microcontroladores',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa D',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Electiva',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestión Empresarial',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Trabajo Terminal II',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Desarrollo de Sistemas Distribuidos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Liderazgo y Desarrollo Profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        }
+    ];
+
+    let materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
 
     //ESFM
     ////Ingeniería Matemática
-    let carrera = new Carrera({
+    carrera = new Carrera({
         nombre: 'Ingeniería Matemática',
         categoria: categorias[0]._id,
         semestres: 8,
@@ -22,7 +328,7 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
     });
 
     await carrera.save();
-    let materias = [
+    materias = [
         {
             nombre: 'Sociedad y Conocimiento',
             carera: carrera._id,
@@ -307,7 +613,7 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
         }
     ];
 
-    let materias_ids = [];
+    materias_ids = [];
 
     await materias.map((item, index) => {
         const materia = new Materia(item);
