@@ -72,7 +72,8 @@ async function carga_categoria_materias(req, res) {
        /*10*/{ nombre: 'Manufactura' },
        /*11*/{ nombre: 'Opción de Titulación' },
        /*12*/{ nombre: 'Geografía' },
-       /*13*/{ nombre: 'Arquitectura y Construcción' }
+       /*13*/{ nombre: 'Arquitectura y Construcción' },
+       /*14*/{ nombre: 'Medicina' }
     ];
     await categoria_materias.map((item, index) => {
         const categoria_materia = new CategoriaMateria(item);
@@ -231,6 +232,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.43020700560175,-99.23244269999998',
             universidad: universidades[0]._id
         },
+        //Yosafat
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingenieria Campus Hidalgo',
             abreviatura: 'UPIIH',
