@@ -1538,7 +1538,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 1
         },
         {
-            nombre: 'Ingles I',
+            nombre: 'Inglés I',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 1
@@ -1586,7 +1586,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Ingles II',
+            nombre: 'Inglés II',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 2
@@ -1652,7 +1652,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 3
         },
         {
-            nombre: 'Ingles III',
+            nombre: 'Inglés III',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 3
@@ -1962,7 +1962,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 1
         },
         {
-            nombre: 'Ingles I',
+            nombre: 'Inglés I',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 1
@@ -1992,7 +1992,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Ingles II',
+            nombre: 'Inglés II',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 2
@@ -2064,7 +2064,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 3
         },
         {
-            nombre: 'Ingles III',
+            nombre: 'Inglés III',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 3
@@ -2492,7 +2492,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Ingles II',
+            nombre: 'Inglés II',
             carera: carrera._id,
             categoria: categoria_materias[3]._id,
             semestre: 4
@@ -2606,7 +2606,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 6
         },
         {
-            nombre: 'Ingles III',
+            nombre: 'Inglés III',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 6
@@ -3939,7 +3939,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Teoría de Control I',
             carera: carrera._id,
-            categoria: categoria_materias[8]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 5
         },
         {
