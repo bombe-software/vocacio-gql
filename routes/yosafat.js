@@ -9,7 +9,7 @@ const Categoria = mongoose.model('categoria');
 
 
 async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
-    //ESCOM (Está en Niveles)
+    //ESCOM
     let carrera = new Carrera({
         nombre: 'Ingeniería en Sistemas Computacionales',
         categoria: categorias[0]._id,
@@ -4554,6 +4554,453 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
     await carrera.save();
 
     //ENCB
+    ////Licenciatura en Biología
+    carrera = new Carrera({
+        nombre: 'Licenciatura en Médico Cirujano y Partero',
+        categoria: categorias[1]._id,
+        semestres: 10,
+        sede: sedes[15]._id,
+        materias: []
+    });
+
+    await carrera.save();
+    materias = [
+        {
+            nombre: 'Anatomía Humana I',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Embriología Humana',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Bioquímica Médica I',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Histología Humana',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Comprensión de Lectura de Inglés Técnico',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Atención Prehospitalaria I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Anatomía Humana II',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Fisiología Humana I',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Bioquímica Médica II',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Bioética',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sociología Médica',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Informática Médica',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Atención Prehospitalaria II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Neuroanatomía',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fisiología Humana II',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Inmunología Médica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Introducción a la Salud Pública',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Metodología de la Investigación y Estadística I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Optativa del Ciclo Básico',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Reanimación Cardiopulmonar Básica y Avanzada',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Anatomía Patológica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Biomedicina Molecular',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Microbiología y Parasitología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Fisiopatología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Antropología Médica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Metodología de la Investigación y Estadística II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Optativa del Ciclo Básico',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Farmacología Básica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Introducción a la Cirugía',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Introducción a la Clínica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Psicología Médica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Epidemiología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Optativa del Ciclo Básico I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Optativa del Ciclo Básico II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Farmacología Clínica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Genética',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Cardiovascular',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Otorrinolaringología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Hematología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Nutriología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Imagenología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Neumología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Dermatología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Oftalmología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Neurología',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Traumatología y Ortopedia',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Estomatología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Diagnóstico Clínico con Apoyo de Laboratorio',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Oncología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Inmunología Clínica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Infectología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gineco Obstetricia',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Psiquiatría',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Medicina Genómica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa del Ciclo Clínico',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Nefrourología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Endocrinología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Gastroenterología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Cirugía y Anestesiología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Salud Ocupacional',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Bioética Clínica',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Optativa del Ciclo Clínico',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Medicina Legal',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Pediatría',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Geriatría y Gerontología',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Urgencias Médico Quirúrgicas',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Terapéutica Médica',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Salud Pública',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Optativa del Ciclo Clínico',
+            carera: carrera._id,
+            categoria: categoria_materias[14]._id,
+            semestre: 10
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    ////Ingeniería Bioquímica
+
+    ////Ingeniería en Sistemas Ambientales
+
+    ////Químico Bacteriólogo Parasitólogo
+
+    ////Químico Farmacéutico Industrial
 
     //ESE
 }
