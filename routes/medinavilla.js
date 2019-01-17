@@ -1598,7 +1598,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Química Organica Aplicada',
+            nombre: 'Química Orgánica Aplicada',
             carera: carrera._id,
             categoria: categoria_materias[2]._id,
             semestre: 2
@@ -1767,7 +1767,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 5
         },
         {
-            nombre: 'Planificación y Economia Ambiental',
+            nombre: 'Planificación y Economía Ambiental',
             carera: carrera._id,
             categoria: categoria_materias[8]._id,
             semestre: 5
@@ -2010,7 +2010,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Química Organica Aplicada',
+            nombre: 'Química Orgánica Aplicada',
             carera: carrera._id,
             categoria: categoria_materias[2]._id,
             semestre: 2
@@ -4895,43 +4895,43 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Cálculo y Geometria Analitica',
+            nombre: 'Cálculo y Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Representaciones graficas',
+            nombre: 'Representaciones Gráficas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Programación Básicas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 1
         },
         {
-            nombre: 'Redaccion y Exposicion de Temas de Ingeniería',
+            nombre: 'Redacción y Exposición de Temas de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
@@ -4941,55 +4941,55 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Geologia',
+            nombre: 'Geología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 2
         },
         {
-            nombre: 'Geometrica Básica',
+            nombre: 'Geometría Básica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Cinematicas y Dinámica',
+            nombre: 'Cinemática y Dinámica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
         },
         {
-            nombre: 'Estructuras Isostaticas',
+            nombre: 'Estructuras Isostáticas',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
         },
         {
-            nombre: 'Recursos de la construccion',
+            nombre: 'Recursos de la Construcción',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 3
         },
         {
-            nombre: 'Sistemas Termodinamicos y Electromagnetismo',
+            nombre: 'Sistemas Termodinámicos y Electromagnetismo',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
@@ -4997,13 +4997,13 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Probabilidad',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
-            nombre: 'Análisis Numéricos',
+            nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
@@ -5013,9 +5013,9 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Sistemas Quimicos en Ingeniería',
+            nombre: 'Sistemas Químicos en Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 4
         },
         {
@@ -5031,15 +5031,15 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Procedimientos constructivos de elementos de estructuras',
+            nombre: 'Procedimientos Constructivos de Elementos de Estructuras',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 4
         },
         {
-            nombre: 'OPTATIVA EDE CIENCIAS SOCIALES Y BIOLOGICAS',
+            nombre: 'Optativa de Ciencias Sociales y Biológicas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 4
         },
         {
@@ -5051,7 +5051,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Ingeniería de Sistemas I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
@@ -5063,7 +5063,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Ingeniería Ambiental I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 5
         },
         {
@@ -5073,21 +5073,21 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 5
         },
         {
-            nombre: 'Programación y Presupuestacion',
+            nombre: 'Programación y Presupuestación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
             nombre: 'Ingeniería de Sistemas II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 6
         },
         {
@@ -5099,35 +5099,35 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Ingeniería Ambiental II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
             nombre: 'Estadística Aplicada a la Ingeniería Civil',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 6
         },
         {
             nombre: 'Comportamiento de Suelos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
             nombre: 'Planeación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 7
         },
         {
-            nombre: 'Hidralica de Canales',
+            nombre: 'Hidráulica de Canales',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 7
@@ -5135,7 +5135,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Análisis Estructural',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
@@ -5147,53 +5147,53 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Movimiento de Tierras',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Abastecimiento de Agua Potable',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Alcantarillado Sanitario y Pluvial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Hidrologia',
+            nombre: 'Hidrología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
             nombre: 'Dimensionamiento de Elementos Estructurales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 8
         },
         {
             nombre: 'Cimentaciones',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 8
         },
         {
-            nombre: 'Edificacion',
+            nombre: 'Edificación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 8
         },
         {
-            nombre: 'Ingeniería de Transito',
+            nombre: 'Ingeniería de Tránsito',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 8
         },
         {
-            nombre: 'OPTATIVAS DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativas de Ciencias Sociales y Humanidades',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 8
@@ -5201,60 +5201,61 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Evaluación de Proyectos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         },
         {
             nombre: 'Obras Hidráulicas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 9
         },
         {
-            nombre: 'Disenio Estructural',
+            nombre: 'Diseño Estructural',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 9
         },
         {
             nombre: 'Tratamientos de Aguas Residuales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 9
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 9
         },
         {
             nombre: 'Ingeniería de Transporte I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Administración en Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 10
         },
         {
             nombre: 'Ingeniería de Transporte II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
             nombre: 'Integracion de Proyectos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 10
         }
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -5264,64 +5265,66 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             });
     });
 
-
+    //Ingeniería Geomática
     carrera.materias = materias_ids;
     await carrera.save();
     carrera = new Carrera({
-        nombre: 'Ingeniería Geomatica',
+        nombre: 'Ingeniería Geomática',
         categoria: categorias[0]._id,
         semestres: 10,
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
+
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Cálculo y Geometria Analitica',
+            nombre: 'Cálculo y Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Representaciones Graficas',
+            nombre: 'Representaciones Gráficas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Practicas de Topografia I',
+            nombre: 'Prácticas de Topografía I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 1
         },
         {
-            nombre: 'Topografia I',
+            nombre: 'Topografía I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 1
         },
         {
-            nombre: 'Redaccion y Exposicion de Temas de Ingeniería',
+            nombre: 'Redacción y Exposición de Temas de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
@@ -5331,7 +5334,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Geologia',
+            nombre: 'Geología',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 2
@@ -5339,41 +5342,41 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Programación Básica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 2
         },
         {
-            nombre: 'Topografia II',
+            nombre: 'Topografía II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 2
         },
         {
-            nombre: 'Practicas de Topografia II',
+            nombre: 'Prácticas de Topografía II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 2
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Cinematicas y Dinámica',
+            nombre: 'Cinemática y Dinámica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
@@ -5381,25 +5384,25 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Probabilidad',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Fogogrametria',
+            nombre: 'Fotogrametría',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 3
         },
         {
-            nombre: 'OPTATIVA DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativa de Ciencias Sociales y Humanidades',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 3
         },
         {
-            nombre: 'Análisis Numéricos',
+            nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
@@ -5409,63 +5412,63 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Estadística Aplicada a Ingeniería Geomatica',
+            nombre: 'Estadística Aplicada a Ingeniería Geomática',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Geodesia I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
-            nombre: 'Procesos Fotogrameticos',
+            nombre: 'Procesos Fotogramétricos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 4
         },
         {
-            nombre: 'Modelacion Matematica',
+            nombre: 'Modelación Matemática',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
-            nombre: 'Cartografia',
+            nombre: 'Cartografía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
-            nombre: 'Geologia y Geomorfologia',
+            nombre: 'Geología y Geomorfología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Geodesia II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Introducción a Bases de Datos Espaciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
-            nombre: 'Ética Profeisonal',
+            nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
@@ -5477,109 +5480,109 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Sistemas de Posicionamientos Global',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Geodesia III',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Sistemas de Información Geografica I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Hidráulica e Hidrologia',
+            nombre: 'Hidráulica e Hidrología',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 7
         },
         {
-            nombre: 'Cálculo de ajustes',
+            nombre: 'Cálculo de Ajustes',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 7
         },
         {
-            nombre: 'Topografia de Yacimientos Minerales',
+            nombre: 'Topografía de Yacimientos Minerales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Percepcion remota I',
+            nombre: 'Percepción Remota I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Sistemas de Información Geografica II',
+            nombre: 'Sistemas de Información Geográfica II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'OPTATIVA DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativa de Ciencias Sociales y Humanidades',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 7
         },
         {
-            nombre: 'Legislación Aplicada a Ingeniería Geomatica',
+            nombre: 'Legislación Aplicada a Ingeniería Geomática',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Proyecto Geometrico de Obras de Infraestructura Lineal',
+            nombre: 'Proyecto Geométrico de Obras de Infraestructura Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
             nombre: 'Fundamentos de Catastro',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Percepcion Remota II',
+            nombre: 'Percepción Remota II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Gestion Ambiental',
+            nombre: 'Gestión Ambiental',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 8
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 8
         },
         {
             nombre: 'Proyecto Geomatico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
-            nombre: 'Practicas Profesionales',
+            nombre: 'Prácticas Profesionales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[11]._id,
             semestre: 9
         },
         {
             nombre: 'Administración de Proyectos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         }
     ];
@@ -5593,9 +5596,11 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería Ambiental
     carrera = new Carrera({
         nombre: 'Ingeniería Ambiental',
         categoria: categorias[0]._id,
@@ -5608,73 +5613,73 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Cálculo y Geometria Analitica',
+            nombre: 'Cálculo y Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Representaciones Graficas',
+            nombre: 'Representaciones Gráficas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Programación Básica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 1
         },
         {
-            nombre: 'Redaccion y Exposicion de Temas de Ingeniería',
+            nombre: 'Redacción y Exposición de Temas de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Probabilidad',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Introducción al Estudio del Medio Ambiente',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
-            nombre: 'Química Inorganica',
+            nombre: 'Química Inorgánica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 2
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
             nombre: 'Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
@@ -5686,37 +5691,37 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Fisicoquímica para Ingeniería Ambiental',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 3
         },
         {
-            nombre: 'OPTATIVA DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativa de Ciencias Sociales y Humanidades',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 3
         },
         {
             nombre: 'Análisis Numéricos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 4
         },
         {
@@ -5732,21 +5737,21 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Química Organica',
+            nombre: 'Química Orgánica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 4
         },
         {
             nombre: 'Biología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[4]._id,
             semestre: 4
         },
         {
-            nombre: 'Geologia',
+            nombre: 'Geología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
@@ -5764,35 +5769,35 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Ecología e Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Ingeniería de Procesos Ecológicos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
-            nombre: 'Hidrologia Superficial',
+            nombre: 'Hidrología Superficial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Transporte y Dispersion de Contaminantes Atmosfericos',
+            nombre: 'Transporte y Dispersión de Contaminantes Atmosféricos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Conductos a Presion y a Superficie Libre',
+            nombre: 'Conductos a Presión y a Superficie Libre',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 6
@@ -5800,49 +5805,49 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Conocimiento Territorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Evaluación de la Calidad del Agua',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Economia Ambiental y Ecologica',
+            nombre: 'Economía Ambiental y Ecológica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Hidrogeologia',
+            nombre: 'Hidrogeología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Evaluación de la Calidad del Aire',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Operaciones y Procesos Unitarios',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 7
         },
         {
-            nombre: 'Gestion Integral de Residuos Sólidos Urbanos',
+            nombre: 'Gestión Integral de Residuos Sólidos Urbanos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 7
         },
         {
-            nombre: 'OPTATIVA DE OTRAS ASIGNATURAS CONVENIENTE',
+            nombre: 'Optativa de Otras Asignaturas Conveniente',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 7
         },
         {
@@ -5858,7 +5863,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 8
         },
         {
-            nombre: 'Control de Emisiones a la Atmosfera',
+            nombre: 'Control de Emisiones a la Atmósfera',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 8
@@ -5866,72 +5871,73 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Proyectos de Plantas de Tratamiento de Agua para Consumo Humano',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Gestion Integral de Residuos de Manejo Especial',
+            nombre: 'Gestión Integral de Residuos de Manejo Especial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 8
         },
         {
-            nombre: 'Contaminacion por Ruido y Control',
+            nombre: 'Contaminación por Ruido y Control',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
             nombre: 'Evaluación Ambiental Estrategica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
             nombre: 'Proyecto Geomatico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Control de la Contaminacion de Suelos y Acuíferos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Obligatoria del Campo de Profundizacion',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Proyectos de Plantas de Tratamiento de Agua Residual',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Sistemas de Recuperacion de Recursos y Energía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 9
         },
         {
             nombre: 'Evaluación de Impacto Ambiental',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -5940,58 +5946,62 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería Geofísica
     carrera = new Carrera({
-        nombre: 'Ingeniería GeoFísica',
+        nombre: 'Ingeniería Geofísica',
         categoria: categorias[0]._id,
         semestres: 10,
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
+
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Cálculo Diferencial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Geometrica Analitica',
+            nombre: 'Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Computacion para Ingenieros',
+            nombre: 'Computación para Ingenieros',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
-            nombre: 'Coltura y Comunicación',
+            nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
@@ -6001,15 +6011,15 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 2
         },
         {
-            nombre: 'Fundamentos de la Geologia',
+            nombre: 'Fundamentos de la Geología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 2
         },
         {
             nombre: 'Química',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 2
         },
         {
@@ -6021,25 +6031,25 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Mineralogia',
+            nombre: 'Mineralogía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 3
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Dibujo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 3
         },
         {
@@ -6049,69 +6059,69 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Cinematica y Dinámica',
+            nombre: 'Cinemática y Dinámica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 4
         },
         {
-            nombre: 'Introducción a la GeoFísica',
+            nombre: 'Introducción a la Geofísica',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Petrología',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Geomática para Ciencias de la Tierra',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 4
         },
         {
-            nombre: 'Petrologia',
+            nombre: 'Variable Compleja Aplicada a la Geofísica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 4
-        },
-        {
-            nombre: 'Geomatica para Ciencias de la Tierra',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 4
-        },
-        {
-            nombre: 'Variable Compleja Aplicada a la GeoFísica',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
             nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
             nombre: 'Probabilidad y Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
-            nombre: 'Sedimentologia',
+            nombre: 'Sedimentología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
-            nombre: 'Geologia Estructural',
+            nombre: 'Geología Estructural',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
-            nombre: 'Estratigrafia',
+            nombre: 'Estratigrafía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Análisis Espectra de Señales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
@@ -6123,31 +6133,31 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Inferencia Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 6
         },
         {
-            nombre: 'Teoría del Potencial Aplicada a la GeoFísica',
+            nombre: 'Teoría del Potencial Aplicada a la Geofísica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Geologia de Campo',
+            nombre: 'Geología de Campo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Literatura Hispanoamericana Contemporanea',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
             nombre: 'Introducción al Diseño de Filtros Digitales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 7
         },
         {
@@ -6163,116 +6173,117 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 7
         },
         {
-            nombre: 'Prospeccion Gravimetrica y Magnetometrica',
+            nombre: 'Prospección Gravimétrica y Magnetométrica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 7
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 7
         },
         {
-            nombre: 'OPTATIVA DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativa de Ciencias Sociales y Humanidades',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 7
         },
         {
             nombre: 'Introducción al Tratamiento de Señales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Prospeccion Sismica',
+            nombre: 'Prospección Sismica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Prospeccion Eléctrica',
+            nombre: 'Prospección Eléctrica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Asignatura del Modulo Seleccionado',
+            nombre: 'Asignatura del Módulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 8
         },
         {
-            nombre: 'PetroFísica y Registros Geofisicos de Pozo',
+            nombre: 'Petrofísica y Registros Geofísicos de Pozo',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Inversión de Datos Geofísicos',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Prospección Electromagnética',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 9
         },
         {
-            nombre: 'Inversión de Datos Geofisicos',
+            nombre: 'Asignatura del Módulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 9
-        },
-        {
-            nombre: 'Prospeccion Electromagnética',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 9
-        },
-        {
-            nombre: 'Asignatura del Modulo Seleccionado',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Evaluación de Proyectos de Inversión',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 9
         },
         {
-            nombre: 'Proyecto Terminal del Modulo Seleccionado',
+            nombre: 'Proyecto Terminal del Módulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[11]._id,
             semestre: 10
         },
         {
-            nombre: 'Procesamiento de Datos Geofisicos',
+            nombre: 'Procesamiento de Datos Geofísicos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
-            nombre: 'Temas Selectos del Modulo Seleccionado',
+            nombre: 'Temas Selectos del Módulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
-            nombre: 'Aignatura del Modulo Seleccionado',
+            nombre: 'Asignatura del Módulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 10
         }
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -6281,58 +6292,62 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería Geológica
     carrera = new Carrera({
-        nombre: 'Ingeniería Geologica',
+        nombre: 'Ingeniería Geológica',
         categoria: categorias[0]._id,
         semestres: 10,
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
+
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Cálculo y Geometria Analitica',
+            nombre: 'Cálculo y Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Química de Ciencias de la Tierra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 1
         },
         {
-            nombre: 'Redaccion y Exposicion de Temas de Ingeniería',
+            nombre: 'Redacción y Exposición de Temas de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Dibujo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
@@ -6344,25 +6359,25 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Fundamentos de la Programación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 2
         },
         {
-            nombre: 'Geometria Descriptiva Aplicada',
+            nombre: 'Geometría Descriptiva Aplicada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
@@ -6372,253 +6387,254 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 3
         },
         {
-            nombre: 'Geologia Física',
+            nombre: 'Geología Física',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 3
         },
         {
-            nombre: 'Paleontologia General',
+            nombre: 'Paleontología General',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 3
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 3
         },
         {
             nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Probabilidad',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
-            nombre: 'Sedimentologia',
+            nombre: 'Sedimentología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
-            nombre: 'Técnicas Geologicas de Campo',
+            nombre: 'Técnicas Geológicas de Campo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
-            nombre: 'Mineralogia',
+            nombre: 'Mineralogía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
-            nombre: 'GeoQuímica',
+            nombre: 'Geoquímica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
-            nombre: 'Estratigrafia',
+            nombre: 'Estratigrafía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Mineralogia Óptica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
-            nombre: 'Literatura Hispanoamericanal',
+            nombre: 'Literatura Hispanoamericana l',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 5
         },
         {
-            nombre: 'Geologia Estructural',
+            nombre: 'Geología Estructural',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
-            nombre: 'Prospeccion GeoFísica y Registros en Pozos',
+            nombre: 'Prospección Geofísica y Registros en Pozos',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Geomorfología',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Geología de Campo y Cartografía',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Petrología Metamó2rfica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 6
         },
         {
-            nombre: 'Geomorfologia',
+            nombre: 'Petrología Ígnea',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 6
-        },
-        {
-            nombre: 'Geologia de Campo y Cartografia',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 6
-        },
-        {
-            nombre: 'Petrologia Metamorfica',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
-            semestre: 6
-        },
-        {
-            nombre: 'Petrologia Ignea',
-            carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Introducción al Análisis Económico Empresarial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 6
         },
         {
-            nombre: 'Tectonica',
+            nombre: 'Tectónica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Metalogenia',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Sistemas de Información Geografica',
+            nombre: 'Sistemas de Información Geográfica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Hidrogeologia',
+            nombre: 'Hidrogeología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Petrologia Sedimentaria',
+            nombre: 'Petrología Sedimentaria',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Geologia del Subsuelo',
+            nombre: 'Geología del Subsuelo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
             nombre: 'Mecánica de Rocas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Geologia Ambiental',
+            nombre: 'Geología Ambiental',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Geologia Aplicada a la Mineria',
+            nombre: 'Geología Aplicada a la Minería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Geologia del Petroleo',
+            nombre: 'Geología del Petroleo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Geologia Aplicada a la Ingeniería Civil',
+            nombre: 'Geología Aplicada a la Ingeniería Civil',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
-            nombre: 'Geoestadistica',
+            nombre: 'Geoestadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
-            nombre: 'Geologia Historica',
+            nombre: 'Geología Histórica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
-            nombre: 'Proyectos de Ingeniería Geologicca',
+            nombre: 'Proyectos de Ingeniería Geológica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 9
         },
         {
-            nombre: 'Geologia de Mexico',
+            nombre: 'Geología de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 10
         },
         {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 10
         },
         {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 10
         }, {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 10
-        },
+        }
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -6627,9 +6643,11 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería Petrolera
     carrera = new Carrera({
         nombre: 'Ingeniería Petrolera',
         categoria: categorias[0]._id,
@@ -6637,54 +6655,55 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Cálculo y Geometria Analitica',
+            nombre: 'Cálculo y Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Química de Ciencias de la Tierra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 1
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Introducción a la Ingeniería Petrolera',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 1
         },
         {
             nombre: 'Dibujo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
@@ -6696,25 +6715,25 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Fundamentos de la Programación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 2
         },
         {
-            nombre: 'Geologia General',
+            nombre: 'Geología General',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
@@ -6724,39 +6743,39 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 3
         },
         {
-            nombre: 'Geologia de Yacimientos de Fluidos',
+            nombre: 'Geología de Yacimientos de Fluidos',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
         },
         {
-            nombre: 'Equipos y Herramientas de Perforacion de Pozos',
+            nombre: 'Equipos y Herramientas de Perforación de Pozos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 3
         },
         {
-            nombre: 'Redaccion y Exposicion de Temas de Ingeniería',
+            nombre: 'Redacción y Exposición de Temas de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 3
         },
         {
             nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Probabilidad',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Propiedades de los Fluidos Petroleros',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
@@ -6766,9 +6785,9 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Geologia y GeoQuímica del Petroleo',
+            nombre: 'Geología y Geoquímica del Petroleo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
@@ -6780,13 +6799,13 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Literatura Hispanoamericana Cotemporanea',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 5
         },
         {
             nombre: 'Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
@@ -6804,103 +6823,103 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Programación Avanzada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
-            nombre: 'Registros Geofisicos en Pozos',
+            nombre: 'Registros Geofísicos en Pozos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Productividad de Pozos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 6
         },
         {
-            nombre: 'Ingeniería de Perforacion de Pozos',
+            nombre: 'Ingeniería de Perforación de Pozos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Comportamiento de Yacimientos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Flujo Multifasico en Tuberias',
+            nombre: 'Flujo Multifásico en Tuberias',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Caracterización Estática de Yacimientos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Caracterización Dinámica de Yacimientos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Sistemas Artificiales de Producción',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Recuperacion Secundaria y Mejorada',
+            nombre: 'Recuperación Secundaria y Mejorada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'Perforacion no Convencional',
+            nombre: 'Perforación no Convencional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
-            nombre: 'OPTATIVA DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativa de Ciencias Sociales y Humanidades',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 7
         },
         {
             nombre: 'Ingeniería de Yacimientos de Gas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 8
         },
         {
             nombre: 'Simulación Matematica de Yacimientos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'Terminacion y Mantenimiento',
+            nombre: 'Terminación y Mantenimiento',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
-            nombre: 'OPTATIVA DE Ingeniería APLICADA',
+            nombre: 'Optativa de Ingeniería Aplicada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 8
         },
         {
@@ -6910,74 +6929,75 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 9
         },
         {
-            nombre: 'Economia de los Hidrocarburos',
+            nombre: 'Economía de los Hidrocarburos',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 9
         },
         {
-            nombre: 'Conduccion y Manejo de la Producción de Hidrocarburos',
+            nombre: 'Conducción y Manejo de la Producción de Hidrocarburos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 9
         },
         {
-            nombre: 'Administración de la Seguridad Industrial y Proteccion Ambiental',
+            nombre: 'Administración de la Seguridad Industrial y Protección Ambiental',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         },
         {
-            nombre: 'OPTATIVA DE Ingeniería APLICADA',
+            nombre: 'Optativa de Ingeniería Aplicada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Planeación y Evaluación de Proyectos Petroleras',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 10
         },
         {
             nombre: 'Temas Selectos de Ingeniería Petrolera',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 10
         },
         {
             nombre: 'Proyectos Integrales Petroleras',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
             nombre: 'Legislación de la Industria Petrolera',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         },
         {
-            nombre: 'OPTATIVA DE Ingeniería APLICADA',
+            nombre: 'Optativa de Ingeniería Aplicada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 10
         }
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -6986,9 +7006,11 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería Industrial
     carrera = new Carrera({
         nombre: 'Ingeniería Industrial',
         categoria: categorias[0]._id,
@@ -6996,48 +7018,50 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
+
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Cálculo Diferencial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Geometria Analitica',
+            nombre: 'Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Computacion para Ingenieros',
+            nombre: 'Computación para Ingenieros',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
             nombre: 'Ingeniería Industrial y Productividad',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
@@ -7049,29 +7073,29 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Química General',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 2
         },
         {
-            nombre: 'Dibujo Mecanico e Industrial',
+            nombre: 'Dibujo Mecánico e Industrial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Cinematica y Dinámica',
+            nombre: 'Cinemática y Dinámica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
@@ -7085,19 +7109,19 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 3
         },
         {
             nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Probabilidad y Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
@@ -7113,13 +7137,13 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Contabilidad Financiera y Costos Introducción a la Economia',
+            nombre: 'Contabilidad Financiera y Costos Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
-            nombre: 'Sistemas ElectroMecánicos',
+            nombre: 'Sistemas Electromecánicos',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 5
@@ -7127,7 +7151,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Estadística Aplicada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
@@ -7145,162 +7169,163 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Ingeniería Económica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 5
         },
         {
             nombre: 'Estudio del Trabajo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 5
         },
         {
             nombre: 'Electrónica Básica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 6
         },
         {
             nombre: 'Investigación de Operaciones I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 6
         },
         {
             nombre: 'Tecnología de Materiales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 6
         },
         {
             nombre: 'Procesos Industriales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 6
         },
         {
             nombre: 'Sistemas de Planeación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 6
         },
         {
             nombre: 'Literatura Hispanoamericana Contemporanea',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
             nombre: 'Instalaciones Electromecánicas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 7
         },
         {
             nombre: 'Investigación de Operaciones II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 7
         },
         {
             nombre: 'Procesos de Manufactura I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[10]._id,
             semestre: 7
         },
         {
             nombre: 'Sistemas de Mejoramiento Ambiental',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 7
         },
         {
             nombre: 'Diseño de Sistemas Productivos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 7
         },
         {
             nombre: 'Relaciones Laborales y Organizacionales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 7
         },
         {
             nombre: 'Instrumentación y Control',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 8
         },
         {
             nombre: 'Procesos de Manufactura II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[10]._id,
             semestre: 8
         },
         {
             nombre: 'Planeación y Control de la Producción',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 8
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 8
         },
         {
             nombre: 'Seminario de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[11]._id,
             semestre: 8
         },
         {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
-            nombre: 'OPTATIVA',
+            nombre: 'Optativa',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 9
         },
         {
-            nombre: 'Recursos y Necesidades de Mexico',
+            nombre: 'Recursos y Necesidades de México',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 9
         },
         {
             nombre: 'Evaluación de Proyectos de Inversión',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         },
         {
             nombre: 'Proyecto de Ingeniería',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[11]._id,
             semestre: 9
         }
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -7309,92 +7334,96 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería en Telecomunicaciones
     carrera = new Carrera({
-        nombre: 'Ingeniería en TeleComunicaciones',
+        nombre: 'Ingeniería en Telecomunicaciones',
         categoria: categorias[0]._id,
         semestres: 9,
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
+
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Cálculo Diferencial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Geometria Analitica',
+            nombre: 'Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Química y Estructura de Materiales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 1
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Estática',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Computacion para Ingenieros',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 2
         },
         {
-            nombre: 'Introducción a la Economia',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Cinematica y Dinámica',
+            nombre: 'Cinemática y Dinámica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 3
@@ -7408,7 +7437,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Programación Avanzada y Métodos Numéricos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 3
         },
         {
@@ -7420,31 +7449,31 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Probabilidad y Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Análisis de Sistemas y Señales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 4
         },
         {
             nombre: 'Diseño Digital',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 4
         },
         {
             nombre: 'Literatura Hispanoamericana Contemporanea',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 4
         },
         {
-            nombre: 'OPTATIVA DE CIENCIAS SOCIALES Y HUMANIDADES',
+            nombre: 'Optativa de Ciencias Sociales y Humanidades',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[9]._id,
             semestre: 4
         },
         {
@@ -7456,180 +7485,181 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Fundamentos de Sistemas de Comunicaciones',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
             nombre: 'Dispositivos de RF',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
             nombre: 'Análisis de Señales Aleatorias',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 5
         },
         {
             nombre: 'Elementos de Control',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 5
         },
         {
             nombre: 'Circuitos Eléctricos',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 5
         },
         {
             nombre: 'Medios de Transmisión',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 6
         },
         {
             nombre: 'Comunicaciones Digitales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 6
         },
         {
             nombre: 'Circuitos de RF',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 6
         },
         {
             nombre: 'Procesamiento Digital de Señales para Comunicaciones',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 6
         },
         {
-            nombre: 'Teoría de la Información y la Codificacion',
+            nombre: 'Teoría de la Información y la Codificación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 6
         },
         {
             nombre: 'Ética Profesional',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
             nombre: 'Antenas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Dispositivos de Microondas I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Receptores',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Tecnologías para Procesamiento Digital de Señales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Redes de Datos I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 7
         },
         {
             nombre: 'Recursos y Necesidades de Mexico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 7
         },
         {
             nombre: 'Sistemas de Comunicaciones Ópticas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Dispositivos de Microondas II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Transmisores',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
-            nombre: 'Sistemas de RadioComunicaciones I',
+            nombre: 'Sistemas de Radiocomunicaciones I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Telefonia Digital',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Asignatura del Modulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Asignatura del Modulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 9
         },
         {
             nombre: 'Asignatura del Modulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 9
         },
         {
-            nombre: 'Administración y Regulacion de las TeleComunicaciones',
+            nombre: 'Administración y Regulación de las Telecomunicaciones',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         },
         {
-            nombre: 'Sistemas de RadioComunicaciones II',
+            nombre: 'Sistemas de Radiocomunicaciones II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 9
         },
         {
             nombre: 'Redes Inalambricas y Moviles',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 9
         },
         {
             nombre: 'Desarollo Empresarial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         }
     ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -7638,9 +7668,11 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 
+    //Ingeniería en Minas y Metalurgia
     carrera = new Carrera({
         nombre: 'Ingeniería en Minas y Metalurgia',
         categoria: categorias[0]._id,
@@ -7648,90 +7680,92 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         sede: sedes[40]._id,
         materias: []
     });
+
     await carrera.save();
+
     materias = [
         {
             nombre: 'Álgebra',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Cálculo Diferencial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
-            nombre: 'Geometria Analitica',
+            nombre: 'Geometría Analítica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 1
         },
         {
             nombre: 'Computacion para Ingenieros',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[7]._id,
             semestre: 1
         },
         {
-            nombre: 'Geologia General',
+            nombre: 'Geología General',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 1
         },
         {
             nombre: 'Álgebra Lineal',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
             nombre: 'Cálculo Integral',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 2
         },
         {
-            nombre: 'Quimimca',
+            nombre: 'Química',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 2
         },
         {
             nombre: 'Dibujo',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[13]._id,
             semestre: 2
         },
         {
-            nombre: 'Minerealogia',
+            nombre: 'Mineralogía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 2
         },
         {
             nombre: 'Cultura y Comunicación',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 2
         },
         {
             nombre: 'Ecuaciones Diferenciales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
             nombre: 'Cálculo Vectorial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
-            nombre: 'Geometria Descriptiva Aplicada',
+            nombre: 'Geometría Descriptiva Aplicada',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 3
         },
         {
@@ -7741,21 +7775,21 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 3
         },
         {
-            nombre: 'Petrologia',
+            nombre: 'Petrología',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 3
         },
         {
             nombre: 'Fisicoquímica',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 4
         },
         {
             nombre: 'Probabilidad y Estadística',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
@@ -7765,45 +7799,45 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 4
         },
         {
-            nombre: 'Geologia Esctural',
+            nombre: 'Geología Estructural',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 4
         },
         {
             nombre: 'Análisis Numérico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 4
         },
         {
             nombre: 'Legislación Aplicada a la Mineria',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 5
         },
         {
-            nombre: 'Cinematica y Dinámica',
+            nombre: 'Cinemática y Dinámica',
             carera: carrera._id,
             categoria: categoria_materias[1]._id,
             semestre: 5
         },
         {
-            nombre: 'Análisis Quimico',
+            nombre: 'Análisis Químico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[2]._id,
             semestre: 5
         },
         {
-            nombre: 'Topografia para Mineros',
+            nombre: 'Topografía para Mineros',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
             nombre: 'Yacimientos Minerales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 5
         },
         {
@@ -7821,138 +7855,140 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Preparación Mecánica de Minerales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
-            nombre: 'Fundamentos para la Explotacion de Minas',
+            nombre: 'Fundamentos para la Explotación de Minas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Prospeccion Minera',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 6
         },
         {
             nombre: 'Literatura Hispanoamericana Contemporanea',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 6
         },
         {
-            nombre: 'Introducción a la Economia AQUIIIIIIII JAJAJA',
+            nombre: 'Introducción a la Economía',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[0]._id,
             semestre: 7
         },
         {
             nombre: 'Dispositivos de Microondas I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Receptores',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Tecnologías para Procesamiento Digital de Señales',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 7
         },
         {
             nombre: 'Redes de Datos I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[6]._id,
             semestre: 7
         },
         {
             nombre: 'Recursos y Necesidades de Mexico',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[3]._id,
             semestre: 7
         },
         {
             nombre: 'Sistemas de Comunicaciones Ópticas',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Dispositivos de Microondas II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Transmisores',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
-            nombre: 'Sistemas de RadioComunicaciones I',
+            nombre: 'Sistemas de Radiocomunicaciones I',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Telefonia Digital',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 8
         },
         {
             nombre: 'Asignatura del Modulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 8
         },
         {
             nombre: 'Asignatura del Modulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
             nombre: 'Asignatura del Modulo Seleccionado',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[12]._id,
             semestre: 9
         },
         {
-            nombre: 'Administración y Regulacion de las TeleComunicaciones',
+            nombre: 'Administración y Regulación de las Telecomunicaciones',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         },
         {
-            nombre: 'Sistemas de RadioComunicaciones II',
+            nombre: 'Sistemas de Radiocomunicaciones II',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 9
         },
         {
             nombre: 'Redes Inalambricas y Moviles',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[5]._id,
             semestre: 9
         },
         {
             nombre: 'Desarollo Empresarial',
             carera: carrera._id,
-            categoria: categoria_materias[1]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 9
         }
     ];
+    ];
 
-    materias_ids = []
+    materias_ids = [];
+
     await materias.map((item, index) => {
         const materia = new Materia(item);
         materias_ids.push(materia._id);
@@ -7961,10 +7997,9 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
                 //console.log(item);
             });
     });
+
     carrera.materias = materias_ids;
     await carrera.save();
 }
-
-
 
 exports.work = carga_carreras_medinavilla;
