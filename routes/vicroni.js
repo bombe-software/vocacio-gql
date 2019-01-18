@@ -10,7 +10,8 @@ const Categoria = mongoose.model('categoria');
 
 async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
 
-    //Ingeniería Mecatrónica
+    //UPIITA
+    ////Ingeniería Mecatrónica
     let carrera = new Carrera({
         nombre: 'Ingeniería Mecatrónica',
         categoria: categorias[0]._id,
@@ -613,7 +614,7 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
-    //Ingeniería Telemática
+    ////Ingeniería Telemática
     carrera = new Carrera({
         nombre: 'Ingeniería Telemática',
         categoria: categorias[0]._id,
@@ -1550,7 +1551,8 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
-    //Ingeniería Civil
+    //ESIA Zacatenco
+    ////Ingeniería Civil
     carrera = new Carrera({
         nombre: 'Ingeniería Civil',
         categoria: categorias[0]._id,
@@ -2184,7 +2186,8 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
-    //Ingeniería en Computación
+    //ESIME Culhuacán
+    ////Ingeniería en Computación
     carrera = new Carrera({
         nombre: 'Ingeniería en Computación',
         categoria: categorias[0]._id,
@@ -2583,9 +2586,9 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
-    //Comunicaciones y Electrónica
+    ////Ingeniería en Comunicaciones y Electrónica
     carrera = new Carrera({
-        nombre: 'Comunicaciónes y Electrónica',
+        nombre: 'Ingeniería en Comunicaciónes y Electrónica',
         categoria: categorias[0]._id,
         semestres: 8,
         sede: sedes[7]._id,
@@ -3145,38 +3148,6 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
-    //Mecánica
-    carrera = new Carrera({
-        nombre: 'Mecánica',
-        categoria: categorias[0]._id,
-        semestres: 8,
-        sede: sedes[7]._id,
-        materias: []
-    });
-
-    await carrera.save(); 
-    materias = [ 
-        {
-            nombre: 'Televisión y Video',
-            carera: carrera._id,
-            categoria: categoria_materias[9]._id,
-            semestre: 9
-        }
-    ];
-
-    materias_ids = [];
-
-    await materias.map((item, index) => {
-        const materia = new Materia(item);
-        materias_ids.push(materia._id);
-        materia.save()
-            .then(item => {
-                //console.log(item);
-            });
-    });
-
-    carrera.materias = materias_ids;
-    await carrera.save();
 }
 
 exports.work = carga_carreras_vicroni;

@@ -3144,7 +3144,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         nombre: 'Ingeniería en Comunicaciones y Electrónica',
         categoria: categorias[0]._id,
         semestres: 7,
-        sede: sedes[8]._id,
+        sede: sedes[11]._id,
         materias: []
     });
     await carrera.save();
@@ -3769,7 +3769,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         nombre: 'Ingeniería en Control y Automatización',
         categoria: categorias[0]._id,
         semestres: 7,
-        sede: sedes[8]._id,
+        sede: sedes[11]._id,
         materias: []
     });
     await carrera.save();
@@ -4130,7 +4130,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         nombre: 'Ingeniería Eléctrica',
         categoria: categorias[0]._id,
         semestres: 7,
-        sede: sedes[8]._id,
+        sede: sedes[11]._id,
         materias: []
     });
 
@@ -4558,7 +4558,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         nombre: 'Ingeniería en Sistemas Automotrices',
         categoria: categorias[0]._id,
         semestres: 7,
-        sede: sedes[8]._id,
+        sede: sedes[11]._id,
         materias: []
     });
 
@@ -5605,7 +5605,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         nombre: 'Ingeniería Ambiental',
         categoria: categorias[0]._id,
         semestres: 10,
-        sede: sedes[8]._id,
+        sede: sedes[40]._id,
         materias: []
     });
 
