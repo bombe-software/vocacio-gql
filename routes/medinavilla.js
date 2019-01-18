@@ -7985,7 +7985,6 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
             semestre: 9
         }
     ];
-    ];
 
     materias_ids = [];
 

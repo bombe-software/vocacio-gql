@@ -104,7 +104,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.50465390562498,-99.14685180000004',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 22.17,
         },
         //Vicroni
         {
@@ -113,7 +114,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.511371305627065,-99.1262256',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 27.68,
         },
         //MedinaVilla
         {
@@ -122,7 +124,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.50728540562578,-99.131257',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 45.80,
         },
         //Yosafat
         {
@@ -131,7 +134,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.50260770562434,-99.13439719999997',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 26.06,
         },
         //Vicroni
         {
@@ -140,7 +144,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.504723405624986,-99.13701470000001',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 61.79,
         },
         //MedinaVilla
         {
@@ -149,7 +154,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '19.48931240562017,-99.17462509999996',
             categoria: categorias[0]._id,
             posicion: '',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 72.87,
         },
         //Yosafat (en niveles)
         {
@@ -158,7 +164,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '19.51532860562829,-99.12724209999999',
             categoria: categorias[0]._id,
             posicion: '',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 57.77,
         },
         //Vicroni
         {
@@ -167,7 +174,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.328780805570155,-99.11196859999995',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 58.33,
         },
         //MedinaVilla
         {
@@ -176,7 +184,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '22.783952906670223,-102.61572990000002',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: null,
         },       
         //Yosafat
         {
@@ -185,7 +194,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.509246905626387,-99.13370740000005',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 109.48,
         },
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas',
@@ -193,7 +203,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.395988705591098,-99.09190190000004',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 71.19,
         },
          //MedinaVilla
         {
@@ -202,7 +213,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '-99.09190190000004,-99.1349563',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 61.79,
         },
         //Yosafat
         {
@@ -211,7 +223,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '21.015105437953512,-101.50366896484158',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 84.24,
         },
         {
             nombre: 'Escuela Superior de Ingeniería Química e Industrias Extractivas',
@@ -219,7 +232,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.501654505624032,-99.14012119999995',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 68.31,
         },
         //MedinaVilla
         {
@@ -228,7 +242,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '19.5002899056236,-99.13286689999995',
             categoria: categorias[0]._id,
             posicion: '',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 54.03,
         },
         {
             nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Tecamachalco',
@@ -236,7 +251,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.43020700560175,-99.23244269999998',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 23.54,
         },
         //Yosafat
         {
@@ -245,7 +261,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '20.112568591265227,-98.84542429603198',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: null,
         },
         //Area Medico Biologicas
         //MedinaVilla*
@@ -255,15 +272,17 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[1]._id,
             posicion: '19.079910805492823,-98.95910960000003',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 89.92,
         },
         {
             nombre: 'Escuela Nacional de Medicina y Homeopatía',
-            abreviatura: 'ENMyH',
+            abreviatura: 'ENMH',
             logo: '',
             categoria: categorias[1]._id,
             posicion: '19.512490305627416,-99.13802309999994',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 124.90,
         },
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Santo Tomas',
@@ -271,7 +290,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[1]._id,
             posicion: '19.45484860560944,-99.16580420000003',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 61.96,
         },
         //MedinaVilla*
         {
@@ -280,7 +300,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[1]._id,
             posicion: '19.45348800560902,-99.17051850000001',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 104.94,
         },
         {
             nombre: 'Escuela Nacional de Ciencias Biológicas',
@@ -288,7 +309,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '19.453235305608917,-99.17245559999998',
             categoria: categorias[1]._id,
             posicion: '',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 110.65,
         },
         {
             nombre: 'Escuela Superior de Medicina',
@@ -296,7 +318,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[1]._id,
             posicion: '19.451037005608264,-99.16867300000001',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 115.93,
         },
         //�rea Sociales y Administrativas
         //MedinaVilla
@@ -306,7 +329,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[2]._id,
             posicion: '19.453807305609107,-99.16799120000002',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 61.96,
         },
         {
             nombre: 'Escuela Superior de Economía',
@@ -314,7 +338,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[2]._id,
             posicion: '19.454496305609315,-99.16841499999998',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 47.68,
         },
         {
             nombre: 'Escuela Superior de Comercio y Administración Unidad Tepepan',
@@ -322,7 +347,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[2]._id,
             posicion: '19.284405005556323,-99.14947069999994',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 34.77,
         },
         //MedinaVilla
         {
@@ -331,7 +357,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[2]._id,
             posicion: '19.51492520562818,-99.1407534',
-            universidad: universidades[0]._id
+            universidad: universidades[0]._id,
+            eficiencia_terminal: 92.65,
         },
         //Escuelas de la UNAM
         //Facultades
@@ -341,7 +368,8 @@ async function carga_sedes(req, res, universidades, categorias) {
             logo: '',
             categoria: categorias[0]._id,
             posicion: '19.325704605569193,-99.1822133',
-            universidad: universidades[1]._id
+            universidad: universidades[1]._id,
+            eficiencia_terminal: 92.65,
         },
         {
             nombre: 'Facultad de Artes y Diseño',
