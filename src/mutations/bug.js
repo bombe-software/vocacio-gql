@@ -13,9 +13,11 @@ function add_bug({ args, req }) {
         comentario,
         estrellas
     } = args;
-        
+    console.log("caca");
+        console.log(comentario);
+        console.log(estrellas);
     const bug = new Bug({
-        comentario, estrella
+        comentario, estrellas
     });
     
     bug.save();

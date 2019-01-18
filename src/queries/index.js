@@ -87,9 +87,9 @@ const RootQuery = new GraphQLObjectType({
       }
     },
     bugs: {
-      type: require('./bug'),
-      resolve(parentValue, { id }) {
-        return Bug.findById(id);
+      type: new GraphQLList(require('./bug')),
+      resolve() {
+        return Bug.find({});
       }
     }
   })

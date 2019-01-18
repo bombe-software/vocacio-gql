@@ -9,8 +9,8 @@ const { add_bug } = require('./bug');
 const RootMutation = new GraphQLObjectType({
   name: 'Mutaciones',
   fields: {
-    test: {
-      type: GraphQLString,
+    add_bug: {
+      type: require('./../queries/bug'),
       args: {
         comentario: { type: GraphQLString }, 
         estrellas: { type: GraphQLFloat }
