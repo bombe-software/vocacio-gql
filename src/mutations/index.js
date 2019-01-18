@@ -1,10 +1,10 @@
 //Configuracion de GraphQL
 const graphql = require('graphql');
 
-const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLList, GraphQLNonNull, GraphQLInt } = graphql;
+const { GraphQLObjectType, GraphQLString, GraphQLID, GraphQLList, GraphQLNonNull, GraphQLInt, GraphQLFloat } = graphql;
 
 //Funciones add
-const { test } = require('./test');
+const { add_bug } = require('./bug');
 
 const RootMutation = new GraphQLObjectType({
   name: 'Mutaciones',
@@ -12,10 +12,11 @@ const RootMutation = new GraphQLObjectType({
     test: {
       type: GraphQLString,
       args: {
-        texto: { type: GraphQLString }
+        comentario: { type: GraphQLString }, 
+        estrellas: { type: GraphQLFloat }
       },
       resolve(parentValue, args, req) {
-        return test({ args, req });
+        return add_bug({ args, req });
       }
     }
   }

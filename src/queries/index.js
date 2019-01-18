@@ -10,6 +10,7 @@ const Sede = mongoose.model('sede');
 const Carrera = mongoose.model('carrera');
 const Materia = mongoose.model('materia');
 const Universidad = mongoose.model('universidad');
+const Bug = mongoose.model('bug')
 
 
 const RootQuery = new GraphQLObjectType({
@@ -85,6 +86,12 @@ const RootQuery = new GraphQLObjectType({
         return Universidad.findById(id);
       }
     },
+    bugs: {
+      type: require('./bug'),
+      resolve(parentValue, { id }) {
+        return Bug.findById(id);
+      }
+    }
   })
 });
 
