@@ -25,7 +25,7 @@ async function carga_universidades(req, res) {
         {
             nombre: "Universidad Autónoma Metropolitana",
             abreviatura: "UAM",
-            logo: ""
+            logo: "UAM.jpg"
         }
     ];
 
