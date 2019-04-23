@@ -1881,7 +1881,7 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
 
     //ESIME Culhuacán
     //Ingeniería Mecánica
-    let carrera = new Carrera({
+    carrera = new Carrera({
         nombre: 'Ingeniería Mecánica',
         categoria: categorias[0]._id,
         semestres: 9,
@@ -1891,7 +1891,7 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
 
     await carrera.save();
 
-    let materias = [
+    materias = [
         {
             nombre: 'Cálculo Diferencial e Integral',
             carera: carrera._id,
@@ -2847,7 +2847,7 @@ async function carga_carreras_yosafat(categorias, categoria_materias, sedes) {
         }
     ];
 
-    let materias_ids = [];
+    materias_ids = [];
 
     await materias.map((item, index) => {
         const materia = new Materia(item);
