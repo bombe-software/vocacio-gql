@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 
 const materia = mongoose.Schema({
     nombre: String,
-    carera: {
+    carrera: {
         type: Schema.Types.ObjectId,
-        ref: 'carera'
+        ref: 'carrera'
     },
     categoria: {
         type: Schema.Types.ObjectId,
