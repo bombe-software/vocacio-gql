@@ -17,8 +17,8 @@ const UniversidadType = new GraphQLObjectType({
     sede: {
         type: GraphQLList(require('./sede')),
         resolve(parentValue) {
-          return Universidad.findById(parentValue).populate('sede')
-              .then(universidad => universidad.sede);
+          return Universidad.findById(parentValue).populate('sedes')
+              .then(universidad => universidad.sedes);
         }
       }
   })

@@ -23,12 +23,12 @@ const RootQuery = new GraphQLObjectType({
       }
     },
     sede: {
-      type: new GraphQLList(require('./sede')),
+      type: require('./sede'),
       args: {
         id: { type: new GraphQLNonNull(GraphQLID) }
       },
       resolve(parentValue, { id }) {
-        return Sede.find(id);
+        return Sede.findById(id);
       }
     },
     carreras: {

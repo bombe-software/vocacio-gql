@@ -28,6 +28,7 @@ const SedeType = new GraphQLObjectType({
           .then(sede => sede.universidad);
       }
     },
+    eficiencia_terminal: {type: GraphQLString},
     carreras: {
       type: GraphQLList(require('./carrera')),
       resolve(parentValue) {

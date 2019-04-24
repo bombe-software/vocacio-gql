@@ -101,7 +101,7 @@ async function carga_sedes(req, res, universidades, categorias) {
         {
             nombre: 'Escuela Superior de Cómputo',
             abreviatura: 'ESCOM',
-            logo: '',
+            logo: 'ESCOM.jpg',
             categoria: categorias[0]._id,
             posicion: '19.50465390562498,-99.14685180000004',
             universidad: universidades[0]._id,
@@ -111,7 +111,7 @@ async function carga_sedes(req, res, universidades, categorias) {
         {
             nombre: 'Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas',
             abreviatura: 'UPIITA',
-            logo: '',
+            logo: 'UPIITA.jpg',
             categoria: categorias[0]._id,
             posicion: '19.511371305627065,-99.1262256',
             universidad: universidades[0]._id,

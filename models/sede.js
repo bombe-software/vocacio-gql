@@ -14,10 +14,11 @@ const sede = mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref: 'universidad'
     },
+    eficiencia_terminal: Number,
     carreras: [{
         type: Schema.Types.ObjectId,
         ref: 'carrera'
-    }]
+    }],
 });
 
 mongoose.model('sede', sede);
