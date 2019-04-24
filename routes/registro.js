@@ -643,7 +643,6 @@ async function carga_sedes(req, res, universidades, categorias) {
 
 async function main(req, res) {
     //Se encarga de que las funciones se ejecuten en serie
-    
     const universidades = await carga_universidades(req, res);
     const categorias =  await carga_categorias(req, res);
     const categoria_materias = await carga_categoria_materias(req, res);
@@ -651,6 +650,7 @@ async function main(req, res) {
     setTimeout(function(){ require('./vicroni').work(categorias, categoria_materias, sedes); }, 6000);
     setTimeout(function(){ require('./medinavilla').work(categorias, categoria_materias, sedes); }, 6000);
     setTimeout(function(){ require('./yosafat').work(categorias, categoria_materias, sedes); }, 6000);
+    setTimeout(function(){ require('./relaciones').work(); }, 12000);
     console.log('Acabó el proceso síncrono');
 }  
 
