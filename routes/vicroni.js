@@ -3148,6 +3148,40 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
+    ////Ingeniería en Comunicaciones y Electrónica
+    carrera = new Carrera({
+        nombre: 'Ingeniería en Comunicaciónes y Electrónica',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+
+    await carrera.save(); 
+    
+    materias = [ 
+        {
+            nombre: 'Fundamentos de Programación',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
 }
 
 exports.work = carga_carreras_vicroni;
