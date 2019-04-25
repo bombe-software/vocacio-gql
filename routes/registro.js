@@ -44,11 +44,21 @@ async function carga_categorias(req, res) {
     //Array de Categorias
     let bd_categorias = [];
     const categorias = [
-        { nombre: 'Ciencias Físico Matemáticas' },
-        { nombre: 'Ciencias Médico Biológicas' },
-        { nombre: 'Ciencias Sociales y Administrativas' },
-        { nombre: 'Humanidades y Artes' },
-        { nombre: 'Interdisciplinaria' }
+        { nombre: 'Ciencias Físico Matemáticas', 
+          logo: 'CFM.png'  
+        },
+        { nombre: 'Ciencias Médico Biológicas', 
+          logo: 'CMB.png'
+        },
+        { nombre: 'Ciencias Sociales y Administrativas', 
+          logo: 'CSA.png'
+        },
+        { nombre: 'Humanidades y Artes', 
+          logo: 'HA.png'
+        },
+        { nombre: 'Interdisciplinaria', 
+          logo: 'ID.png'
+        }
     ];
     await categorias.map((item, index) => {
         const categoria = new Categoria(item);

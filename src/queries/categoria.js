@@ -10,7 +10,8 @@ const CategoriaType = new GraphQLObjectType({
   name:  'CategoriaType',
   fields: () => ({
     id: { type: GraphQLID },
-    nombre: { type: GraphQLString }
+    nombre: { type: GraphQLString },
+    logo: { type: GraphQLString }
   })
 });
 
