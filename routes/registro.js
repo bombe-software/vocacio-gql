@@ -89,7 +89,11 @@ async function carga_categoria_materias(req, res) {
        /*11*/{ nombre: 'Opción de Titulación' },
        /*12*/{ nombre: 'Geografía' },
        /*13*/{ nombre: 'Arquitectura y Construcción' },
-       /*14*/{ nombre: 'Medicina' }
+       /*14*/{ nombre: 'Medicina' },
+       /*15*/{ nombre: 'Automotriz' },
+       /*16*/{ nombre: 'Diseño y artes visuales' },
+       /*17*/{ nombre: 'Derecho' },
+       /*18*/{ nombre: 'Contabilidad' }
     ];
     await categoria_materias.map((item, index) => {
         const categoria_materia = new CategoriaMateria(item);
@@ -207,6 +211,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 109.48,
         },
+        //Vicroni
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas',
             abreviatura: 'UPIICSA',
@@ -236,6 +241,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 84.24,
         },
+        //Vicroni
         {
             nombre: 'Escuela Superior de Ingeniería Química e Industrias Extractivas',
             abreviatura: 'ESIQIE',
@@ -255,6 +261,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 54.03,
         },
+        //Vicroni
         {
             nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Tecamachalco',
             abreviatura: 'ESIA Tecamachalco',

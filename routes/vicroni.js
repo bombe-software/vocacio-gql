@@ -2196,8 +2196,8 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
         materias: []
     });
 
-    await carrera.save(); 
-    materias = [ 
+    await carrera.save();
+    materias = [
         {
             nombre: 'Fundamentos de Programación',
             carera: carrera._id,
@@ -2595,9 +2595,9 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
         materias: []
     });
 
-    await carrera.save(); 
+    await carrera.save();
 
-    materias = [ 
+    materias = [
         {
             nombre: 'Fundamentos de Programación',
             carera: carrera._id,
@@ -3148,23 +3148,341 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
-    ////Ingeniería en Comunicaciones y Electrónica
+    ////Ingeniería en Sistemas Automotrices
     carrera = new Carrera({
-        nombre: 'Ingeniería en Comunicaciónes y Electrónica',
+        nombre: 'Ingeniería en Sistemas Automotrices',
         categoria: categorias[0]._id,
         semestres: 8,
         sede: sedes[7]._id,
         materias: []
     });
 
-    await carrera.save(); 
-    
-    materias = [ 
+    await carrera.save();
+
+    materias = [
         {
-            nombre: 'Fundamentos de Programación',
+            nombre: 'Calculo diferencial e integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fisica Clasica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fundamentos de algebra',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fundamentos de programacion',
             carera: carrera._id,
             categoria: categoria_materias[6]._id,
             semestre: 1
+        },
+        {
+            nombre: 'Humanidades I: Ingenieria, ciencia y sociedad',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Quimica basica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Calculo vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Ecuaciones diferenciales',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Metodos numericos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Humanidades II: La comunicación y la ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Electricidad y magnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Quimica aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Analisis de circuitos electricos CD y CA',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Dinamica de fluidos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estatica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Humanidades III: Desarrollo humano',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Termodinamica I',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Introduccion a la ciencia de los materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Dinamica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Electronica I',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Termodinamica II',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Oloneumatica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Probabilidad y estadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Resistencia de los materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Elementos mecanicos automotrices',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Sistemas automotrices',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Transferencia de calor',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Modelado y simulación asistida por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Metrología y normalización',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Diseño automotriz',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Dinamica del vehiculo',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Motores de combustion interna',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Sistema de suspensión, direccion y frenos',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Tren motriz',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Procesos de manufactura automotriz',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Topicos selectos de ingenieria I',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingenieria ambiental automotriz',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Humanidades IV: Desarrollo personal y profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Topicos selectos de ingenieria II',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Evaluacion economica de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Humanidades V: El humano frente a la globalización',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Proyecto integrador',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Tecnicas de mecanizado',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingenieria de autopartes',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Metodos de frabicación',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas flexibles de manufactura',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Diseño de herramental automotriz',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Robotica automotriz',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Tecnologia de materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Tecnologia de soldadura',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Procesos de conformado',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Tecnicas de caracterización de materiales automotrices',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Tecnologia de union de materiales automotrices',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ensayo selecto de materiales automotrices',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
         }
     ];
 
@@ -3182,6 +3500,1962 @@ async function carga_carreras_vicroni(categorias, categoria_materias, sedes) {
     carrera.materias = materias_ids;
     await carrera.save();
 
+    ////Ingeniería en Mecanica
+    carrera = new Carrera({
+        nombre: 'Ingenieria Mecanica',
+        categoria: categorias[0]._id,
+        semestres: 9,
+        sede: sedes[7]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Calculo diferencial e integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fisica Clasica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fundamentos de algebra',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fundamentos de programacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Humanidades I: Ingenieria, ciencia y sociedad',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Quimica basica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Calculo vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Dibujo asistido por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Electricidad y magnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Humanidades II (La comunicación y la ingenieria)',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Metodos numericos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Quimica aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Administración',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ciencia de los materiales I',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Circuitos electricos',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estatica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Metrologia dimensional',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ciencia de los materiales II',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Dinamica de la particula',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Humanidades III (Desarrollo humano)',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Maquinas electricas',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Mecanica de materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Termosdinamica I',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Dinamica del cuerpo rigido',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electronica de potencia aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Mecanica de fluidos I',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Mecanica de materiales II',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Termodinamida II',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electronica digital aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Ingenieria de manufactura I',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Mecanica de fluidos II',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Mecanismos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Probabilidad y estadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Transferencia de calor',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Analisis economico',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Diseño de elementos mecanicos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingenieria de manufactura II',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Introduccion a los sistemas automaticos',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Maquinas hidraulicas',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Maquinas termicas',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Topicos selectos de ingenieria I',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Dinamica de maquinaria',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Evaluacion economica de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Humanidades IV: Desarrollo personal y profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Topicos selectos de ingenieria II',
+            carera: carrera._id,
+            categoria: categoria_materias[15]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Humanidades V: El humano frente a la globalización',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Bombas hidraulicas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Diseño mecanico I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ingenieria quimica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Instalaciones electricas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Mecanica de materiales III',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Neumatica indutrial',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Refrigeracion',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Sistemas de calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Tratamientos termicos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Turbinas electricas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Control numerico computarizado',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Diseño de elementos termicos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Diseño herramiental',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'diseño de sistemas de produccion',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Fuentes alternas de energia',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Generadores de vapor',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ingenieria ambiental',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Manufactura asistida por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Motores de combustion interna',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Acondicionamiento de aire',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Administracion de la calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Control y proteccion de motores electricos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Diseño mecanico II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Diseño, seleccion y aplicación de materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Estructuras',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Hidraulicas de potencias',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Plantas termicas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Plantas de bombeo',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Procesos quimicos indutriales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Automatizacion de proceso industriales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Automaticacion de procesos industriales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Diseño asistido por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instalaciones mecanicas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instrumentacion y control de procesos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instalaciones mecanicas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Instrumentacion y control de proceso industriales',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Matematicas avanzadas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Metrologia avanzada',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'sistemas modernos embebidos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Turbinas y plantas electricas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    ////Administracion industrial
+    carrera = new Carrera({
+        nombre: 'Administracion industrial',
+        categoria: categorias[2]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Comunicación profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Sociedad, Tecnología y Deontologia',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Habilidades del Pensamiento',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Complementaria Institucional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Administracion integral',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Contabilidad Financiera',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Informática',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Cálculo Diferencial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Microeconomía',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Contextos de la Administración Industria',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: ' Sistemas Organizacionales',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Mercadotecnia',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Derecho Mercantil',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Macroeconomía',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Tecnologías de Información',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Costos Histórico',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Tendencias de la Administración',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Comportamiento Organizacional',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Contabilidad Administrativa',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Derecho del Trabajo y de la Seguridad Social',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Tecnologìas en Ambiente Web',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Probabilidad',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estructuras Productiva',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: ' Procesos Industriales/Lab. de PI',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estadística',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Control y Auditoría Administrativa',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Presupuestos',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Procesos de Manufactura',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Procesos de Manufactura',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Aplicación de Procesos Industriales/Lab. de PI',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Relaciones Humanas',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas de Fabricación',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Metodología de la Investigación ',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Planeacion estrategica',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Derecho Fiscal',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Gestión Tecnológica e Innovación',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Seguridad Industrial y Sistemas Ambientales',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Álgebra Lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Estudio de los Impuestos',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Gestión y Mejora de la Productividad y Calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Relaciones Laborales',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Pronósticos e Inventarios',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Administración Financiera',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Investigación y Análisis de Mercados',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Programación Lineal Aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Generación e Innovación de Negocio',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Mercadotecnia Internacional',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Negocios Internacionales',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Control de los Procesos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas de Producción',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Evaluación Financiera',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Diseño y Documentación de Sistemas de Gestión',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Administración de Remuneraciones',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Redes y Simulación',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Servicio Social',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Gestión del Cambio Organizacional',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Dirección Estratégica',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Formulación yEvaluación de Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Auditoría para Sistemas de Gestión Integral',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Seminario de  Mercadotecnia',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestión del Capital Intelectual',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    ////Ingeniería industrial
+    carrera = new Carrera({
+        nombre: 'Ingeniería industrial',
+        categoria: categorias[2]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Contexto occidentalde la Ingeniería Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Cálculo Vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Metodologia de la investigacion',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Dibujo Asistido por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Cálculo Diferencial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Sociedad Tecnología y Deontología',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Administración Integral',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Tecnología Informática',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Contexto Oriental de Ingeniería Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Mecánica Clásica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Química Aplicada ',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Comunicación profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Cálculo integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Probabilidad',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Administración de Capital Humano',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Electromagnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Química Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Control de Calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Métodos matemáticos de la Ingeniería',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estadística',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Mecánica de Materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ingeniería de la Productividad y Diseño del trabajo',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Sistemas Neumáticos e Hidráulicos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Plantas y procesos Industriales',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Ingeniería de Estándares de trabajo',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Economía Integral',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Algebra lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Mercadotecnia e Investigación de mercados',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Dinámica de Mecanismos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Normalización y Metrología Dimensional',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Diseño y Evaluación de Estaciones de Trabajo',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Complementaria Institucional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Electricidad y electrónica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Pronósticos e Inventarios',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Contabilidad y Costos Industriales',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Legislación para la Promoción Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Distribución de Planta y Manejo de Materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Pruebas de Calidad para la Ingeniería',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Tecnología de Materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Conformado de Materiales',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Determinación y Aplicación de Estándares',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Determinación y Aplicación de Estándares',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Procesos de Mejoramiento Continuo',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Instrumentación y Control Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Finanzas para Ingeniería',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Programación Lineal Aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Manufactura Integral ',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Psicología Industrial ',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Psicología Industrial ',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Electricidad Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Maquinados Industriales',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Ingeniería de Sistemas',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Manufactura Esbelta',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Manufactura Asistida por Computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Gestión del Mantenimiento',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Economía de la Ingeniería ',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Redes y Simulación',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Higiene y Seguridad ',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas de Producción',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas Automatizados',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Logística Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas Integrados de Manufactura',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestión Ambienta',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestión de Cadena de Suministro',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestión de Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Proyecto de Titulación',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Formulación y Evaluación de  Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Innovación y Transferencia Tecnológica',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Política Empresarial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestión de Calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+
+    ////Ingeniería informatica
+    carrera = new Carrera({
+        nombre: 'Ingeniería informatica',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Administración Interal',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Cálculo Diferencial e Integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Comunicacion profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Consatbilidad de costos',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Estudio de la industria nacional de software',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Fisica para informaticos',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Logica de programación',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Apliaciones de sistemas digitales',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Desarrollo de la creatividad',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Estudio de la industria continental del software',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Matematicas discretas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Probabilidad',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas digitales',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sociedad, tecnologia y deontologia',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Algebra lineal',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estadistica',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estudio de la industria Mundial del software',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Legislacion informatica',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Psicologia en el trabajo',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fundamentos de programacion orientada a objetos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Arquitectura de computadoras',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Estructuras de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Teoria de la computacion',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fundamentos de ingenieria de software',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Presupuestos y finanzas',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Programacion linel aplicada',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Herramientas automatizadas',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Metodos numericos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Teleinformatica',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Fundamentos de Inteligencia Artificial',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Planeacion estrategica',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Algoritmos computacionales',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Dispositivos programables',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Programacion web',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas operativos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Ingenieria de requerimientos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Simulacion de sistemas',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Construccion de base de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Economia',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Seguridad informatica',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Economia de la ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingenieria del conocimiento',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Redes',
+            carera: carrera._id,
+            categoria: categoria_materias[5]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Economia de la ingenieria',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Adquisicion de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Compiladores',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Ingenieria de diseño',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Sistemas den tiempo real',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Adminstracion de bases de datos',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Habilidades directivas',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Metodologia de la investigacion',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Aplicacion de redes',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Calidad y normalizacion de software',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Formulacion y evaluacion de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Ingenieria de pruebas',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Practica profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Administracion de tecnologias',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Gestion de proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Informatica empresarial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Proyecto de titulacion',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Servicio social',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 8
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    ////Ingeniería en Transporte
+    carrera = new Carrera({
+        nombre: 'Ingeniería en Transporte',
+        categoria: categorias[0]._id,
+        semestres: 8,
+        sede: sedes[7]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Calculo diferencial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Calculo vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Enfoque empresarial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Dibujo para transporte asistido por computadora',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Tecnologia informatica',
+            carera: carrera._id,
+            categoria: categoria_materias[6]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Sociedad, tecnologia y deontologia',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Comunicacion profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Contexto nacional',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Calculo integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Mecanica clasica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Probabilidad',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Vias terrestres',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Transporte carretero',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Transporte ferroviario',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Transporte maritimo',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Contexto internacional de la ingenieria en transporte',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Matematicas aplicadas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Electromagnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Quimica energetica y ambiental',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 3
+        }
+    ]
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+        const materia = new Materia(item);
+        materias_ids.push(materia._id);
+        materia.save()
+            .then(item => {
+                //console.log(item);
+            });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+        ////Ingeniería en Comunicaciones y Electrónica
+        carrera = new Carrera({
+            nombre: 'Ingeniería en Comunicaciónes y Electrónica',
+            categoria: categorias[0]._id,
+            semestres: 8,
+            sede: sedes[7]._id,
+            materias: []
+        });
+    
+        await carrera.save();
+    
+        materias = [
+            {
+                nombre: 'Fundamentos de Programación',
+                carera: carrera._id,
+                categoria: categoria_materias[6]._id,
+                semestre: 1
+            }
+        ];
+    
+        materias_ids = [];
+    
+        await materias.map((item, index) => {
+            const materia = new Materia(item);
+            materias_ids.push(materia._id);
+            materia.save()
+                .then(item => {
+                    //console.log(item);
+                });
+        });
+    
+        carrera.materias = materias_ids;
+        await carrera.save();
 }
 
 exports.work = carga_carreras_vicroni;
