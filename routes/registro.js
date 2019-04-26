@@ -242,7 +242,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 84.24,
         },
-        //13Vicroni 
+        //13Vicroni En proceso :V
         {
             nombre: 'Escuela Superior de Ingeniería Química e Industrias Extractivas',
             abreviatura: 'ESIQIE',
