@@ -212,7 +212,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 109.48,
         },
-        //10Vicroni
+        //10Vicroni Listo
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas',
             abreviatura: 'UPIICSA',
@@ -242,7 +242,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 84.24,
         },
-        //13Vicroni
+        //13Vicroni 
         {
             nombre: 'Escuela Superior de Ingeniería Química e Industrias Extractivas',
             abreviatura: 'ESIQIE',
@@ -272,7 +272,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 23.54,
         },
-        //16Vicroni
+        //16Vicroni Listo
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Hidalgo',
             abreviatura: 'UPIIH',
