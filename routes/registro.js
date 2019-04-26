@@ -108,7 +108,7 @@ async function carga_sedes(req, res, universidades, categorias) {
         //Escuelas del IPN
         //Area Fisico Matematica
         
-        //Yosafat LISTO
+        //0Yosafat LISTO
         {
             nombre: 'Escuela Superior de Cómputo',
             abreviatura: 'ESCOM',
@@ -118,7 +118,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 22.17,
         },
-        //Vicroni LISTO
+        //1Vicroni LISTO
         {
             nombre: 'Unidad Profesional Interdisciplinaria en Ingeniería y Tecnologías Avanzadas',
             abreviatura: 'UPIITA',
@@ -128,7 +128,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 27.68,
         },
-        //MedinaVilla LISTO
+        //2MedinaVilla LISTO
         {
             nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Ticomán',
             abreviatura: 'ESIA Ticomán',
@@ -138,7 +138,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 45.80,
         },
-        //Yosafat LISTO
+        //3Yosafat LISTO
         {
             nombre: 'Escuela Superior de Físico Matemáticas',
             abreviatura: 'ESFM',
@@ -148,7 +148,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 26.06,
         },
-        //Vicroni LISTO
+        //4Vicroni LISTO
         {
             nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Zacatenco',
             abreviatura: 'ESIA Zacatenco',
@@ -158,7 +158,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 61.79,
         },
-        //MedinaVilla LISTO
+        //5MedinaVilla LISTO
         {
             nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Azcapotzalco',
             abreviatura: 'ESIME Azcapotzalco',
@@ -168,7 +168,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 72.87,
         },
-        //Yosafat (en niveles)
+        //6Yosafat (en niveles)
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Biotecnología',
             abreviatura: 'UPIBI',
@@ -178,7 +178,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 57.77,
         },
-        //Vicroni LISTO
+        //7Vicroni LISTO
         {
             nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Culhuacan',
             abreviatura: 'ESIME Culhuacan',
@@ -188,7 +188,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 58.33,
         },
-        //MedinaVilla LISTO
+        //8MedinaVilla LISTO
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Zacatecas',
             abreviatura: 'UPIIZ',
@@ -198,7 +198,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: null,
         },       
-        //Yosafat LISTO
+        //9Yosafat LISTO
         {
             nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Ticoman',
             abreviatura: 'ESIME Ticomán',
@@ -208,7 +208,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 109.48,
         },
-        //Vicroni
+        //10Vicroni
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería y Ciencias Sociales y Administrativas',
             abreviatura: 'UPIICSA',
@@ -218,7 +218,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 71.19,
         },
-         //MedinaVilla Listo
+         //11MedinaVilla Listo
         {
             nombre: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Zacatenco',
             abreviatura: 'ESIME Zacatenco',
@@ -228,7 +228,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 61.79,
         },
-        //Yosafat LISTO
+        //12Yosafat LISTO
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Guanajuato',
             abreviatura: 'UPIIG',
@@ -238,7 +238,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 84.24,
         },
-        //Vicroni
+        //13Vicroni
         {
             nombre: 'Escuela Superior de Ingeniería Química e Industrias Extractivas',
             abreviatura: 'ESIQIE',
@@ -248,7 +248,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 68.31,
         },
-        //MedinaVilla
+        //14MedinaVilla LISTO
         {
             nombre: 'Escuela Superior de Ingeniería Textil',
             abreviatura: 'ESIT',
@@ -258,7 +258,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 54.03,
         },
-        //Yosafat LISTO
+        //15Yosafat LISTO
         {
             nombre: 'Escuela Superior de Ingeniería y Arquitectura Unidad Tecamachalco',
             abreviatura: 'ESIA Tecamachalco',
@@ -268,7 +268,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 23.54,
         },
-        //Vicroni
+        //16Vicroni
         {
             nombre: 'Unidad Profesional Interdisciplinaria de Ingeniería Campus Hidalgo',
             abreviatura: 'UPIIH',
@@ -279,7 +279,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             eficiencia_terminal: null,
         },
         //Area Medico Biologicas
-        //MedinaVilla*
+        //17MedinaVilla*
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Milpa Alta',
             abreviatura: 'CICS Milpa Alta',
@@ -289,7 +289,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 89.92,
         },
-        //Yosafat
+        //18Yosafat
         {
             nombre: 'Escuela Nacional de Medicina y Homeopatía',
             abreviatura: 'ENMH',
@@ -299,7 +299,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 124.90,
         },
-        // Vicroni
+        //19Vicroni
         {
             nombre: 'Centro Interdisciplinario de Ciencias de la Salud Unidad Santo Tomas',
             abreviatura: 'CICS Santo Tomás',
@@ -309,7 +309,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 61.96,
         },
-        //MedinaVilla*
+        //20MedinaVilla Listo
         {
             nombre: 'Escuela Superior de Enfermería y Obstetricia',
             abreviatura: 'ESEO',
@@ -319,7 +319,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 104.94,
         },
-        //Yosafat
+        //21Yosafat
         {
             nombre: 'Escuela Nacional de Ciencias Biológicas',
             abreviatura: 'ENCB',
@@ -329,7 +329,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 110.65,
         },
-        // Vicroni
+        // 22Vicroni
         {
             nombre: 'Escuela Superior de Medicina',
             abreviatura: 'ESM',
@@ -340,7 +340,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             eficiencia_terminal: 115.93,
         },
         //�rea Sociales y Administrativas
-        //MedinaVilla
+        //23MedinaVilla LISTO
         {
             nombre: 'Escuela Superior de Comercio y Administración Unidad Santo Tomás',
             abreviatura: 'ESCA Santo Tomás',
@@ -350,7 +350,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 61.96,
         },
-        // Yosafat
+        // 24Yosafat
         {
             nombre: 'Escuela Superior de Economía',
             abreviatura: 'ESE',
@@ -360,7 +360,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 47.68,
         },
-        // Vicroni
+        // 25Vicroni
         {
             nombre: 'Escuela Superior de Comercio y Administración Unidad Tepepan',
             abreviatura: 'ESCA Tepepan',
@@ -370,7 +370,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[0]._id,
             eficiencia_terminal: 34.77,
         },
-        //MedinaVilla
+        //26MedinaVilla LISTO
         {
             nombre: 'Escuela Superior de Turismo',
             abreviatura: 'EST',
@@ -382,7 +382,7 @@ async function carga_sedes(req, res, universidades, categorias) {
         },
         //Escuelas de la UNAM
         //Facultades
-        // Yosafat
+        // 27Yosafat
         {
             nombre: 'Facultad de Arquitectura',
             abreviatura: 'FA',
@@ -392,7 +392,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[1]._id,
             eficiencia_terminal: 92.65,
         },
-        // Vicroni
+        //28 Vicroni
         {
             nombre: 'Facultad de Artes y Diseño',
             abreviatura: 'FAD',
@@ -401,7 +401,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.251975905546253,-99.11826739999998',
             universidad: universidades[1]._id
         }, 
-        //MedinaVilla
+        //29MedinaVilla LISTO -2
         {
             nombre: 'Facultad de Ciencias',
             abreviatura: "",
@@ -410,7 +410,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.3240451055687,-99.18017870000006',
             universidad: universidades[1]._id
         },
-        //Yosafat
+        //30Yosafat
         {
             nombre: 'Facultad de Ciencias Políticas y Sociales',
             abreviatura: 'FCPyS',
@@ -419,7 +419,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.318696905567023,-99.17812029999999',
             universidad: universidades[1]._id
         },
-        //Vicroni
+        //31Vicroni
         {
             nombre: 'Facultad de Contaduría y Administración',
             abreviatura: 'FCA',
@@ -428,7 +428,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.32418190556871,-99.184575',
             universidad: universidades[1]._id
         },
-        //MedinaVilla
+        //32MedinaVilla
         {
             nombre: 'Facultad de Derecho',
             abreviatura: "",
@@ -437,7 +437,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.334463905571937,-99.1854621',
             universidad: universidades[1]._id
         },
-        //Yosafat
+        //33Yosafat
         {
             nombre: 'Facultad de Economía',
             abreviatura: "",
@@ -446,7 +446,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.334670005572026,-99.18419439999997',
             universidad: universidades[1]._id
         },
-        //Vicroni
+        //34Vicroni
         {
             nombre: 'Facultad de Estudios Superiores Acatlán',
             abreviatura: 'FES Acatlán',
@@ -455,7 +455,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.4841199655026,-99.24662879021298',
             universidad: universidades[1]._id
         },
-        //MedinaVilla
+        //35MedinaVilla
         {
             nombre: 'Facultad de Estudios Superiores Aragón',
             abreviatura: 'FES Aragón',
@@ -464,7 +464,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.476165705616065,-99.04674049999994',
             universidad: universidades[1]._id
         },
-        //Yosafat
+        //36Yosafat
         {
             nombre: 'Facultad de Estudios Superiores Cuautitlán',
             abreviatura: 'FES Cuautitlán',
@@ -473,7 +473,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.690713805683064,-99.18977459999996',
             universidad: universidades[1]._id
         },
-        //Vicroni
+        //37Vicroni
         {
             nombre: 'Facultad de Estudios Superiores Iztacala',
             abreviatura: 'FES Iztacala',
@@ -482,7 +482,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.525946005631624,-99.18950099999995',
             universidad: universidades[1]._id
         },
-         //MedinaVilla
+         //38MedinaVilla
         {
             nombre: 'Facultad de Estudios Superiores Zaragoza',
             abreviatura: 'FES Zaragoza',
@@ -491,7 +491,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.383606799498345,-99.0376316621045',
             universidad: universidades[1]._id
         },
-        // Yosafat
+        //39 Yosafat
         {
             nombre: 'Facultad de Filosofía y Letras',
             abreviatura: 'FFyL',
@@ -501,7 +501,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             universidad: universidades[1]._id
         },
       
-        // Vicroni
+        // 40 Vicroni
         {
             nombre: 'Facultad de Medicina',
             abreviatura: 'FacMed',
@@ -510,7 +510,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.333215105571536,-99.18023119999998',
             universidad: universidades[1]._id
         },
-          //MedinaVilla LISTO
+          //41 MedinaVilla LISTO
           {
             nombre: 'Facultad de Ingeniería',
             abreviatura: 'FI',
@@ -519,7 +519,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.33158541415654,-99.18482835952454',
             universidad: universidades[1]._id
         },
-        //Yosafat
+        //42Yosafat
         {
             nombre: 'Facultad de Medicina Veterinaria y Zootecnia',
             abreviatura: 'FMVZ',
@@ -528,7 +528,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.33007440557056,-99.17705690000003',
             universidad: universidades[1]._id
         },
-        // Vicroni
+        // 43Vicroni
         {
             nombre: 'Facultad de Música',
             abreviatura: 'FaM',
@@ -537,7 +537,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.353958705578,-99.15371919999995',
             universidad: universidades[1]._id
         },
-        //MedinaVilla
+        // 44MedinaVilla
         {
             nombre: 'Facultad de Odontología',
             abreviatura: "",
@@ -546,7 +546,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.334550605571984,-99.18145470000002',
             universidad: universidades[1]._id
         },
-        //Yosafat
+        //45Yosafat
         {
             nombre: 'Facultad de Psicología',
             abreviatura: "",
@@ -555,7 +555,7 @@ async function carga_sedes(req, res, universidades, categorias) {
             posicion: '19.334857105572052,-99.18888800000002',
             universidad: universidades[1]._id
         },
-        //Vicroni
+        //46Vicroni
         {
             nombre: 'Facultad de Química',
             abreviatura: "",
