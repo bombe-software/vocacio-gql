@@ -678,6 +678,7 @@ async function main(req, res) {
     setTimeout(function(){ require('./vicroni').work(categorias, categoria_materias, sedes); }, 6000);
     setTimeout(function(){ require('./medinavilla').work(categorias, categoria_materias, sedes); }, 6000);
     setTimeout(function(){ require('./yosafat').work(categorias, categoria_materias, sedes); }, 6000);
+    setTimeout(function(){ require('./rubenhdez').work(categorias, categoria_materias, sedes); }, 6000);
     setTimeout(function(){ require('./relaciones').work(); }, 12000);
     console.log('Acabó el proceso síncrono');
 }  
