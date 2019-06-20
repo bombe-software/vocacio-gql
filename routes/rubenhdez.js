@@ -625,6 +625,318 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
 
     carrera.materias = materias_ids;
     await carrera.save();
+
+    //Ingeniería Bioquímica
+    carrera = new Carrera({
+        nombre: 'Ingeniería Bioquímica',
+        categoria: categorias[2]._id,
+        semestres: 9,
+        sede: sedes[21]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Cálculo Diferencial e Integral',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Desarrollo del Pensamiento Científico y Empresarial',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Física General',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Liderazgo y Grupos de Trabajo',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Química Inorgánica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Cálculo Vectorial',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Electricidad y Magnetismo',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Fisicoquímica I',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Química Orgánica',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Bioquímica y Biología Molecular',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fisicoquímica II',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Ingeniería Termodinámica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Métodos Químicos de Análisis',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Balance de Masa y Energía',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Bioestadística',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Fenómenos de Transporte',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Métodos de Análisis',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Microbiología General',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Administración Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Bioquímica y Análisis de Alimentos de Origen Animal',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Bioquímica y Análisis de Alimentos de Origen Vegetal',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Bioquímica Microbiana',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Operaciones de Transferencia de Momento',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Evaluación y Normalización de Alimentos',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Legislación y Competencias Laborales',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Métodos Numéricos',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Microbiología Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Operaciones de Transferencia de Calor',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Problemas y Perspectivas Socioeconómicas de México',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Bioingeniería I',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingeniería de Alimentos',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingeniería Económica',
+            carera: carrera._id,
+            categoria: categoria_materias[18]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Ingeniería Mecánica y Eléctrica',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Operaciones de Transferencia de Masa I',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Proyecto de Titulación I',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Administración de Calidad',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Bioingeniería II',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Medición y Control de Procesos',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Operaciones de Transferencia de Masa II',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Proyecto de Titulación II',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Tecnología de Alimentos',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Administración de la Producción',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Diseño y Desarrollo de Productos Alimenticios',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Evaluación Ambiental y Desarrollo Sustentable',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Ingeniería de Fermentaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Ingeniería de Procesos',
+            carera: carrera._id,
+            categoria: categoria_materias[2]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Proyecto de Titulación III',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 9
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+    const materia = new Materia(item);
+            materias_ids.push(materia._id);
+            materia.save()
+                .then(item => {
+                    //console.log(item);
+                });
+        });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    //TODO: Ingeniería en Sistemas Ambientales
 }
 
 exports.work = carga_carreras_rubenhdez;
