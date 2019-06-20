@@ -666,7 +666,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         },
     ];
 
-    materias_ids = [];
+    let materias_ids = [];
 
     await materias.map((item, index) => {
         const materia = new Materia(item);

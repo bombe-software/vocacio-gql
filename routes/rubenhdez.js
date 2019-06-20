@@ -68,7 +68,7 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
             semestre: 2
         },
         {
-        nombre: 'Química Orgánica',
+            nombre: 'Química Orgánica',
             carera: carrera._id,
             categoria: categoria_materias[2]._id,
             semestre: 2
@@ -309,7 +309,7 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
         },
     ];
 
-    materias_ids = [];
+    let materias_ids = [];
 
     await materias.map((item, index) => {
     const materia = new Materia(item);
@@ -331,6 +331,7 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
         sede: sedes[21]._id,
         materias: []
     });
+
     await carrera.save();
 
     materias = [
@@ -937,6 +938,457 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
     await carrera.save();
 
     //TODO: Ingeniería en Sistemas Ambientales
+    //! Opciones de materias por trayectoria
+
+    //** Facultad de Arquitectura
+
+    // Licenciatura de Arquitectura
+    carrera = new Carrera({
+        nombre: 'Licenciatura de Arquitectura',
+        categoria: categorias[0]._id,
+        semestres: 10,
+        sede: sedes[27]._id,
+        materias: []
+    });
+
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Taller Integral I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Geometría I',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Expresión Gráfica I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Arqueología del Hábitat I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Teorización del Entorno I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Matemáticas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Sistemas Ambientales I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Taller Integral II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Geometría II',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Expresión Gráfica II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Arqueología del Hábitat II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Teorización del Entorno II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas Estructurales Básicos I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas Ambientales II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Taller Integral de Arquitectura I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Geometría III',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Expresión Arquitectónica I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Historia de la Arquitecura I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Teoría de la Arquitectura I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Sistemas Estructurales Básicos II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Sistemas Urbano Arquitectónicos I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Extensión Universitaria I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Taller Integral de Arquitectura II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Expresión Arquitectónica II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Historia de la Arquitecura II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Teoría de la Arquitectura II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas Estructurales Básicos II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas de Instalaciones I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas Urbano Arquitectónicos II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Extensión Universitaria II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Taller Integral de Arquitectura III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Expresión Arquitectónica III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Historia de la Arquitecura III',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Teoría de la Arquitectura III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Sistemas Estructurales I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Sistemas de Instalaciones II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Proceso de Diseño Urbano Ambiental I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Extensión Universitaria III',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Taller Integral de Arquitectura IV',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Administración en Arquitectura I',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Sistemas Estructurales II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Sistemas de Instalaciones III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Proceso de Diseño Urbano Ambiental II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Extensión Universitaria IV',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Curso Optativo I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Curso Optativo II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Taller Integral de Arquitectura V',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Administración en Arquitectura II',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Sistemas Estructurales III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Extensión Universitaria V',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Curso Optativo III',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Curso Optativo IV',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Taller Integral de Arquitectura VI',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Administración en Arquitectura III',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Curso Optativo V',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Curso Optativo VI',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Titulación I',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Curso Optativo VII',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Curso Optativo VIII',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Titulación II',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 10
+        },
+        /*
+          ? Las optativas que no tienen semestre definido
+          ? que valor tomarán
+        */
+        {
+            nombre: 'Crítica y Reflexión',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Diseño del Hábitar y Medio Ambiente',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Gerencia de Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Gestión de Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Gestión en la Producción del Hábitat',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Cultura y Conservación del Patrimonio',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Expresividad Arquitectónica',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Estructuras y Técnicas Constructivas',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Proceso Proyectal',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        }
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+    const materia = new Materia(item);
+            materias_ids.push(materia._id);
+            materia.save()
+                .then(item => {
+                    //console.log(item);
+                });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    //TODO: Licenciatura de Arquitectura de Paisaje
 }
 
 exports.work = carga_carreras_rubenhdez;
