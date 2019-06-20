@@ -10142,7 +10142,7 @@ async function carga_carreras_medinavilla(categorias, categoria_materias, sedes)
         {
             nombre: 'Introducción a la Comunicación Integral',
             carera: carrera._id,
-            categoria: categoria_materias[82]._id,
+            categoria: categoria_materias[8]._id,
             semestre: 3
         },
         {
