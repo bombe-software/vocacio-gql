@@ -1860,6 +1860,432 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
     carrera.materias = materias_ids;
     await carrera.save();
 
+    // Licenciatura de Diseño Industrial
+    carrera = new Carrera({
+        nombre: 'Licenciatura de Diseño Industrial',
+        categoria: categorias[0]._id,
+        semestres: 10,
+        sede: sedes[27]._id,
+        materias: []
+    });
+	
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Taller Integral I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Geometría I',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Expresión Gráfica I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Arqueología del Hábitat I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Teorización del Entorno I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Matemáticas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Sistemas Ambientales I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Taller Integral II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Geometría II',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Expresión Gráfica II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Arqueología del Hábitat II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Teorización del Entorno II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas Estructurales Básicos I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas Ambientales II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Diseño III',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Fabricación I',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Materiales I',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Formación Integral I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Visualización y Bocetaje de Productos',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Modelos I',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Geometría del Objeto',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Modelo Virtual I',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Diseño IV',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Fabricación II',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Materiales II',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Función',
+            carera: carrera._id,
+            categoria: categoria_materias[1]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Formación Integral II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Bocetado Digital',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Modelos II',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Dibujo Técnico',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Modelo Virtual II',
+            carera: carrera._id,
+            categoria: categoria_materias[7]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Diseño V',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Fabricación III',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Contexto Socioeconómico del Diseño Industrial',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Diseño+Utopía',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Optativa de Saberes de lo Humano y lo Social I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Investigación y Lenguaje Profesional',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Formación Integral III',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Optativa de Saberes de Comuniación I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Optativa I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Diseño VI',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Fabricación IV',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Optativa de Saberes de Gestión y Emprendimiento I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Diseño, Contexto y Sostenibilidad',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Optativa de Saberes de lo Humano y lo Social II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Formación Integral IV',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Presentación de Proyectos',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Optativa de Saberes de Comuniación II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Optativa II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Diseño VII (Ergonomía)',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Calidad y Normatividad',
+            carera: carrera._id,
+            categoria: categoria_materias[10]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa de Saberes de Gestión y Emprendimiento II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Formación Integral V',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa III',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa IV',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa V',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Diseño VIII (Estetica)',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa VI',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa VII',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa VIII',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Diseño Temático',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Optativa de Saberes de Diseño',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Optativa de Saberes de Gestión y Emprendimiento III',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Optativa IX',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Titulación',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Optativa X',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 10
+        },
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+    const materia = new Materia(item);
+            materias_ids.push(materia._id);
+            materia.save()
+                .then(item => {
+                    //console.log(item);
+                });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
+    //TODO: Licenciatura de Urbanismo
+    // https://arquitectura.unam.mx/plan-de-estudios-urb.html
 }
 
 exports.work = carga_carreras_rubenhdez;
