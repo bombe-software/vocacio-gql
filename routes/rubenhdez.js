@@ -1388,7 +1388,478 @@ async function carga_carreras_rubenhdez(categorias, categoria_materias, sedes){
     carrera.materias = materias_ids;
     await carrera.save();
 
-    //TODO: Licenciatura de Arquitectura de Paisaje
+    // Licenciatura de Arquitectura de Paisaje
+    carrera = new Carrera({
+        nombre: 'Licenciatura de Arquitectura de Paisaje',
+        categoria: categorias[0]._id,
+        semestres: 10,
+        sede: sedes[27]._id,
+        materias: []
+    });
+    await carrera.save();
+
+    materias = [
+        {
+            nombre: 'Teorización del Entorno I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Arqueología del Hábitat I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Expresión Gráfica I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Geometría I',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Taller Integral I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Matemáticas',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Sistemas Ambientales I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 1
+        },
+        {
+            nombre: 'Teorización del Entorno II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Arqueología del Hábitat II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Expresión Gráfica II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Geometría II',
+            carera: carrera._id,
+            categoria: categoria_materias[0]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Taller Integral II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas Estructurales Básicos I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Sistemas Ambientales II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 2
+        },
+        {
+            nombre: 'Teoría de la Arquitectura de Paisaje I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Historia de la Arquitectura de Paisaje I',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Medio Biofísico I',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Botánica',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Expresión Gráfica III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Metodología I',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Taller de Proyectos I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Construcción I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Topografía',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Sistemas Socioambientales',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 3
+        },
+        {
+            nombre: 'Teoría de la Arquitectura de Paisaje II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Historia de la Arquitectura de Paisaje II',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Medio Biofísico II',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Ecología',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Expresión Gráfica IV',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Metodología II',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Taller de Proyectos II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Construcción II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Sistemas de Información Geográfica',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Planeación y Paisaje',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Práctica de Campo I',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 4
+        },
+        {
+            nombre: 'Diseño con Vegetación',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Agua en el Paisaje',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Expresión Gráfica V',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Metodología III',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Taller de Proyectos III',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Instalaciones',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Administración I',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Paisaje Rural',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Ambiente y Comportamiento Humano',
+            carera: carrera._id,
+            categoria: categoria_materias[3]._id,
+            semestre: 5
+        },
+        {
+            nombre: 'Mantenimiento Vegetal',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Biogeografía',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Expresión Gráfica VI',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Metodología VI',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Taller de Proyectos VI',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Temas Selectos de Construcción',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Derecho y Paisajes',
+            carera: carrera._id,
+            categoria: categoria_materias[17]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Espacios Urbanos',
+            carera: carrera._id,
+            categoria: categoria_materias[16]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Paisaje Urbano',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Práctica de Campo II',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 6
+        },
+        {
+            nombre: 'Paisaje y Patrimonio',
+            carera: carrera._id,
+            categoria: categoria_materias[12]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Conservación y Rehabilitación del Paisaje',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Taller de Proyectos V',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Gestión de Paisaje',
+            carera: carrera._id,
+            categoria: categoria_materias[8]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa I',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Optativa II',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Impacto Ambiental',
+            carera: carrera._id,
+            categoria: categoria_materias[4]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Taller de Proyectos VI',
+            carera: carrera._id,
+            categoria: categoria_materias[13]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa III',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa IV',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Optativa V',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 8
+        },
+        {
+            nombre: 'Taller Integral de Titulación I',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Optativa VI',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        {
+            nombre: 'Taller Integral de Titulación II',
+            carera: carrera._id,
+            categoria: categoria_materias[11]._id,
+            semestre: 10
+        },
+        {
+            nombre: 'Optativa VII',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 9
+        },
+        //? Semestre en optativa
+        {
+            nombre: 'Área Diseño',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Área Ambiental',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Área Teórico Humanística',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Área Territorio y Sociedad',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+        {
+            nombre: 'Área Tecnología',
+            carera: carrera._id,
+            categoria: categoria_materias[9]._id,
+            semestre: 7
+        },
+    ];
+
+    materias_ids = [];
+
+    await materias.map((item, index) => {
+    const materia = new Materia(item);
+            materias_ids.push(materia._id);
+            materia.save()
+                .then(item => {
+                    //console.log(item);
+                });
+    });
+
+    carrera.materias = materias_ids;
+    await carrera.save();
+
 }
 
 exports.work = carga_carreras_rubenhdez;
